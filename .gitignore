@@ -1,0 +1,40 @@
+# Data
+data/raw/
+data/processed/*.pt
+data/processed/*.pkl
+
+# Models
+models/*.pt
+models/*.pth
+
+# Results
+results/checkpoints/
+results/logs/
+
+# Env
+__pycache__/
+*.pyc
+*.pyo
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Large files
+*.log
