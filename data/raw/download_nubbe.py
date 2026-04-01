@@ -54,6 +54,9 @@ WHERE {
 OPTIONAL { ?compound <http://nubbekg.aksw.org/ontology#commonName> ?name . }
 OPTIONAL { ?compound <http://nubbekg.aksw.org/ontology#smiles> ?smiles . }
 
+# -----------------------
+# Molecular descriptors
+# -----------------------
 OPTIONAL {
     ?compound <http://nubbekg.aksw.org/ontology#hasDescriptors> ?d .
     ?d a <http://nubbekg.aksw.org/ontology#MolecularDescriptors> .
@@ -71,12 +74,17 @@ OPTIONAL {
     OPTIONAL { ?topo <http://nubbekg.aksw.org/ontology#tpsa> ?tpsa . }
 }
 
+# -----------------------
+# CORRECT bioactivity block
+# -----------------------
 OPTIONAL {
-    ?bio a <http://nubbekg.aksw.org/ontology#Bioactivity> .
+    ?assay <http://nubbekg.aksw.org/ontology#testedCompound> ?compound .
+    ?assay <http://nubbekg.aksw.org/ontology#hasBioactivity> ?bio .
     ?bio <http://www.w3.org/2000/01/rdf-schema#label> ?bioactivity .
 }
 
 }
+LIMIT 100
 """
 
 results_1 = g.query(query_1)
@@ -126,6 +134,7 @@ OPTIONAL {
 }
 
 }
+LIMIT 100
 """
 
 results_2 = g.query(query_2)
