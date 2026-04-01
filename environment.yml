@@ -1,20 +1,27 @@
-name: brnpdb-gnn
+name: nubbe-env
+
 channels:
-  - pyg
   - conda-forge
-  - nvidia
+
 dependencies:
   - python=3.10
-  - pytorch=2.1.0=py3.10_cuda12.1_cudnn8.9.2_0
-  - pytorch-geometric=2.5.0
-  - pytorch-sparse=0.6.18
-  - pytorch-cluster=1.6.3
-  - rdkit=2024.03.5
-  - deepchem=2.8.0
-  - scikit-learn=1.4.2
-  - matplotlib=3.8.3
-  - seaborn=0.13.2
-  - plotly=5.20.0
-  - wandb=0.16.6
-  - tensorboard=2.16.2
-  - jupyterlab=4.1.8
+
+  # ---- Required for download_nubbe.py ----
+  - pandas
+  - rdflib
+
+  # ---- NOT needed yet (keep for later) ----
+  # - jupyterlab
+  # - numpy
+  # - pytorch
+  # - pytorch-geometric
+  # - pytorch-sparse
+  # - pytorch-cluster
+  # - rdkit
+  # - deepchem
+  # - scikit-learn
+  # - matplotlib
+  # - seaborn
+  # - plotly
+  # - wandb
+  # - tensorboard
