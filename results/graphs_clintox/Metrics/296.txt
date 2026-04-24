@@ -1,0 +1,5 @@
+Number of vertices: 26
+Number of edges: 30
+Average degree: 2.31
+Number of connected components: 1
+Component sizes (sorted): [26]
