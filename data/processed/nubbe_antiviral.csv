@@ -1,0 +1,7 @@
+compound,name,smiles,mw,formula,volume,monomass,nrotb,tpsa,bioactivities,speciesName,stateName,cityName,iupac,inchi,inchikey,hba,hbd,logp,lipinski
+http://nubbekg.aksw.org/data/compound/2489,"3,4-dihydroxybenzoic acid geranyl ester",O=C(OC/C=C(C)/CC/C=C(C)/C)C1=CC(O)=C(O)C=C1,290.3542,C17H22O4,282.969,290.1518,7.0,66.761,Antiviral | Inhibition of Protease,Piper crassinervium,SP,Araraquara ,"(2E)-3,7-dimethylocta-2,6-dien-1-yl 3,4-dihydroxybenzoate","1S/C17H22O4/c1-12(2)5-4-6-13(3)9-10-21-17(20)14-7-8-15(18)16(19)11-14/h5,7-9,11,18-19H,4,6,10H2,1-3H3/b13-9+
+","OVDDPLULMGGUFM-UKTHLTGXSA-N
+",4.0,2.0,4.661,0.0
+http://nubbekg.aksw.org/data/compound/2524,p-hydroxybenzoic acid-geranyl ester,OC1=CC=C(C(OC/C=C(C)/CC/C=C(C)/C)=O)C=C1,274.3548,C17H22O3,274.952,274.1569,7.0,46.533,Antiviral | Inhibition of Protease,Piper crassinervium,SP,Araraquara ,"(2E)-3,7-dimethylocta-2,6-dien-1-yl 4-hydroxybenzoate","1S/C17H22O3/c1-13(2)5-4-6-14(3)11-12-20-17(19)15-7-9-16(18)10-8-15/h5,7-11,18H,4,6,12H2,1-3H3/b14-11+
+","ZMIOERHZBVVFLW-SDNWHVSQSA-N
+",3.0,1.0,5.15,1.0

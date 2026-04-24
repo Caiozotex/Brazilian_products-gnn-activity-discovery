@@ -1,0 +1,43 @@
+compound,name,smiles,mw,formula,volume,monomass,nrotb,tpsa,bioactivities,speciesName,stateName,cityName,iupac,inchi,inchikey,hba,hbd,logp,lipinski
+http://nubbekg.aksw.org/data/compound/2882,(+)-11α-Hydroxyerythravine,COC1=CC3=C([C@]2(C[C@@H](O)C=C4)C4=CCN2C[C@H]3O)C=C1OC,315.3636,C18H21NO4,286.827,315.14706,2.0,62.162,Anxiolytic,Erythrina mulungu,SP,Rifaina ,"(1S,8S,16R)-4,5-dimethoxy-10-azatetracyclo[8.7.0.0¹,¹³.0²,⁷]heptadeca-2(7),3,5,12,14-pentaene-8,16-diol","1S/C18H21NO4/c1-22-16-7-13-14(8-17(16)23-2)18-9-12(20)4-3-11(18)5-6-19(18)10-15(13)21/h3-5,7-8,12,15,20-21H,6,9-10H2,1-2H3/t12-,15+,18-/m0/s1
+","LRCYONYSPOTFTD-PNPHSEOMSA-N
+",5.0,2.0,0.944,0.0
+http://nubbekg.aksw.org/data/compound/2883,(+)-Erythravine,COC4=CC3=C(C=C4OC)[C@]12C[C@H](C=CC1=CCN2CC3)O,299.3642,C18H21NO3,278.783,299.15213,2.0,41.934,Anxiolytic,Erythrina mulungu,SP,Rifaina ,"(1S,16R)-4,5-dimethoxy-10-azatetracyclo[8.7.0.0¹,¹³.0²,⁷]heptadeca-2(7),3,5,12,14-pentaen-16-ol","1S/C18H21NO3/c1-21-16-9-12-5-7-19-8-6-13-3-4-14(20)11-18(13,19)15(12)10-17(16)22-2/h3-4,6,9-10,14,20H,5,7-8,11H2,1-2H3/t14-,18-/m0/s1
+","JEBFJSHKHYDVNP-KSSFIOAISA-N
+",4.0,1.0,1.935,0.0
+http://nubbekg.aksw.org/data/compound/2884,(+)-α-Hydroxyerysotrine,COC1=CC3=C([C@]2(C[C@@H](OC)C=C4)C4=CCN2C[C@H]3O)C=C1OC,329.3902,C19H23NO4,304.355,329.16272,3.0,51.168,Anxiolytic,Erythrina mulungu,SP,Rifaina ,"(1S,8S,16R)-4,5,16-trimethoxy-10-azatetracyclo[8.7.0.0¹,¹³.0²,⁷]heptadeca-2(7),3,5,12,14-pentaen-8-ol","1S/C19H23NO4/c1-22-13-5-4-12-6-7-20-11-16(21)14-8-17(23-2)18(24-3)9-15(14)19(12,20)10-13/h4-6,8-9,13,16,21H,7,10-11H2,1-3H3/t13-,16+,19-/m0/s1
+","QWWCVLZNFFVFTR-CRFBAAHOSA-N
+",5.0,1.0,1.561,0.0
+http://nubbekg.aksw.org/data/compound/2885,(-)-Spectaline,O[C@H]1[C@H](N[C@H](CC1)CCCCCCCCCCCCC(C)=O)C,325.5292,C20H39NO2,360.027,325.29807,13.0,49.326,Anti-inflamatory | Antinociceptive | Antioxidant | Cytotoxic,Cassia leptophylla | Cassia spectabilis | Senna spectabilis,SP,Araraquara  | Sao Paulo ,"14-[(2S,5R,6R)-5-hydroxy-6-methylpiperidin-2-yl]tetradecan-2-one","1S/C20H39NO2/c1-17(22)13-11-9-7-5-3-4-6-8-10-12-14-19-15-16-20(23)18(2)21-19/h18-21,23H,3-16H2,1-2H3/t18-,19+,20-/m1/s1
+","SMOKZFNZPZHGMX-HSALFYBXSA-N
+",3.0,2.0,5.311,1.0
+http://nubbekg.aksw.org/data/compound/2886,(-)-3-O-acetyl-spectaline,C[C@@H]1[C@@H](CC[C@@H](N1)CCCCCCCCCCCCC(C)=O)OC(C)=O,367.5658,C22H41NO3,396.538,367.30865,15.0,55.403,Anti-inflamatory | Antinociceptive | Antioxidant | Cytotoxic,Cassia spectabilis | Senna spectabilis,SP,Araraquara  | Sao Paulo ,"(2R,3R,6S)-2-methyl-6-(13-oxotetradecyl)piperidin-3-yl acetate","1S/C22H41NO3/c1-18(24)14-12-10-8-6-4-5-7-9-11-13-15-21-16-17-22(19(2)23-21)26-20(3)25/h19,21-23H,4-17H2,1-3H3/t19-,21+,22-/m1/s1
+","LRKWDKCSHJWJST-BAGYTPMASA-N
+",4.0,1.0,6.015,1.0
+http://nubbekg.aksw.org/data/compound/2887,N-tert-Butoxycarbonyl-2-(R)-methyl-6-(S )-(tetradecyl-13'-one)-piperidin-3-(R)-ol,O[C@H]1[C@@H](C)N(C(OC(C)(C)C)=O)[C@@H](CCCCCCCCCCCCC(C)=O)CC1,425.645,C25H47NO4,454.563,425.3505,15.0,66.842,Anti-inflamatory | Antinociceptive,Cassia spectabilis | Senna spectabilis,SP,Araraquara  | Sao Paulo ,"tert-butyl (2R,3R,6S)-3-hydroxy-2-methyl-6-(13-oxotetradecyl)piperidine-1-carboxylate","1S/C25H47NO4/c1-20(27)16-14-12-10-8-6-7-9-11-13-15-17-22-18-19-23(28)21(2)26(22)24(29)30-25(3,4)5/h21-23,28H,6-19H2,1-5H3/t21-,22+,23-/m1/s1
+","PPMSVIPEMZHYRS-XPWALMASSA-N
+",5.0,1.0,6.591,1.0
+http://nubbekg.aksw.org/data/compound/2888,2-(R)-Methyl-6-(S)-(tetradecyl-13'-one)-3-(R)-O-tert-butoxycarbonyl-piperidine,C[C@@H]1[C@@H](CC[C@@H](N1)CCCCCCCCCCCCC(C)=O)OC(OC(C)(C)C)=O,425.645,C25H47NO4,455.149,425.3505,17.0,64.637,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"tert-butyl (2R,3R,6S)-2-methyl-6-(13-oxotetradecyl)piperidin-3-yl carbonate","1S/C25H47NO4/c1-20(27)16-14-12-10-8-6-7-9-11-13-15-17-22-18-19-23(21(2)26-22)29-24(28)30-25(3,4)5/h21-23,26H,6-19H2,1-5H3/t21-,22+,23-/m1/s1
+","HGUBSUVMPCCXIF-XPWALMASSA-N
+",5.0,1.0,6.963,1.0
+http://nubbekg.aksw.org/data/compound/2889,2-(R)-Methyl-6-(S)-(tetradecyl-13'-one)-3(R)-O-tert-butyldimethylsilyl-piperidine,C[C@@H]1[C@@H](CC[C@@H](N1)CCCCCCCCCCCCC(C)=O)O[Si](C(C)(C)C)(C)C,439.79,C26H53NO2Si,489.851,439.38455,16.0,38.332,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"14-[(2S,5R,6R)-5-[(tert-butyldimethylsilyl)oxy]-6-methylpiperidin-2-yl]tetradecan-2-one","1S/C26H53NO2Si/c1-22(28)18-16-14-12-10-8-9-11-13-15-17-19-24-20-21-25(23(2)27-24)29-30(6,7)26(3,4)5/h23-25,27H,8-21H2,1-7H3/t23-,24+,25-/m1/s1
+","UOWPWXFFEDRGOE-DSNGMDLFSA-N
+",3.0,1.0,8.494,1.0
+http://nubbekg.aksw.org/data/compound/2890,(-)-Spectalinine; 2-(R)-Methyl-6-(S )-(tetradecyl-13'-hydroxy)-piperidin-3-(R)-ol; 13'-Hydroxyspectaline,C[C@@H]1[C@@H](CC[C@@H](N1)CCCCCCCCCCCCC(C)O)O,327.545,C20H41NO2,365.889,327.31372,13.0,52.483,Anti-inflamatory | Antinociceptive,Cassia leptophylla | Senna spectabilis,SP,Araraquara  | Sao Paulo ,"(2R,3R,6S)-6-(13-hydroxytetradecyl)-2-methylpiperidin-3-ol","1S/C20H41NO2/c1-17(22)13-11-9-7-5-3-4-6-8-10-12-14-19-15-16-20(23)18(2)21-19/h17-23H,3-16H2,1-2H3/t17?,18-,19+,20-/m1/s1
+","POUWXWGBWYDTMW-RAFMOHDBSA-N
+",3.0,3.0,5.497,1.0
+http://nubbekg.aksw.org/data/compound/2891,N-Benzoyl-2-(R)-methyl-6-(S)-(tetradecyl-13'-one)-3-(R)-O-tert-butoxycarbonyl-piperidine,C[C@@H]1[C@H](OC(OC(C)(C)C)=O)CC[C@H](CCCCCCCCCCCCC(C)=O)N1C(C2=CC=CC=C2)=O,529.751,C32H51NO5,545.922,529.3767,18.0,72.919,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"(2R,3R,6S)-1-benzoyl-2-methyl-6-(13-oxotetradecyl)piperidin-3-yl tert-butyl carbonate","1S/C32H51NO5/c1-25(34)19-15-12-10-8-6-7-9-11-13-18-22-28-23-24-29(37-31(36)38-32(3,4)5)26(2)33(28)30(35)27-20-16-14-17-21-27/h14,16-17,20-21,26,28-29H,6-13,15,18-19,22-24H2,1-5H3/t26-,28+,29-/m1/s1
+","IMVZSUXDXLTMEX-XNFLFYSQSA-N
+",6.0,0.0,7.769,2.0
+http://nubbekg.aksw.org/data/compound/2892,2-(R)-methyl-6-(S)-(tetradecyl-13'-hydroxime)-piperidin-3-(R)-ol,O[C@H]1[C@H](N[C@H](CC1)CCCCCCCCCCCC/C(C)=N/O)C,340.5438,C20H40N2O2,372.322,340.309,13.0,64.847,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"(2R,3R,6S)-6-[(13E)-13-(hydroxyimino)tetradecyl]-2-methylpiperidin-3-ol","1S/C20H40N2O2/c1-17(22-24)13-11-9-7-5-3-4-6-8-10-12-14-19-15-16-20(23)18(2)21-19/h18-21,23-24H,3-16H2,1-2H3/b22-17+/t18-,19+,20-/m1/s1
+","HHEMYPOKGNDJRD-FKLTYTASSA-N
+",4.0,3.0,5.761,1.0
+http://nubbekg.aksw.org/data/compound/2893,N-Methanesulfonyl-2-(R)-methyl-6-(S)-(tetradecyl-13'-one)-3-(R)-O-tert-butoxycarbonyl-piperidine,C[C@@H]1[C@H](OC(OC(C)(C)C)=O)CC[C@H](CCCCCCCCCCCCC(C)=O)N1S(=O)(C)=O,503.735,C26H49NO6S,503.523,503.32806,18.0,89.99,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"tert-butyl (2R,3R,6S)-1-methanesulfonyl-2-methyl-6-(13-oxotetradecyl)piperidin-3-yl carbonate","1S/C26H49NO6S/c1-21(28)17-15-13-11-9-7-8-10-12-14-16-18-23-19-20-24(22(2)27(23)34(6,30)31)32-25(29)33-26(3,4)5/h22-24H,7-20H2,1-6H3/t22-,23+,24-/m1/s1
+","FASQFNSKPNNVSC-TZRRMPRUSA-N
+",7.0,0.0,6.582,2.0
+http://nubbekg.aksw.org/data/compound/2894,2-(R)-Methyl-6-(S)-(tetradecyl-13'-one)-piperidin-3-one,O=C1[C@H](N[C@H](CC1)CCCCCCCCCCCCC(C)=O)C,323.5133,C20H37NO2,354.165,323.28244,13.0,46.169,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"(2R,6S)-2-methyl-6-(13-oxotetradecyl)piperidin-3-one","1S/C20H37NO2/c1-17(22)13-11-9-7-5-3-4-6-8-10-12-14-19-15-16-20(23)18(2)21-19/h18-19,21H,3-16H2,1-2H3/t18-,19+/m1/s1
+","VQHQDAAWFVGOFT-MOPGFXCFSA-N
+",3.0,1.0,5.126,1.0
+http://nubbekg.aksw.org/data/compound/2895,2-(R)-Methyl-6-(S )-(tetradecyl-13'-hydroxy)-piperidin-3-(S)-ol,C[C@@H]1[C@H](CC[C@@H](N1)CCCCCCCCCCCCC(C)O)O,327.545,C20H41NO2,365.889,327.31372,13.0,52.483,Anti-inflamatory | Antinociceptive,Senna spectabilis,SP,Araraquara ,"(2R,3S,6S)-6-(13-hydroxytetradecyl)-2-methylpiperidin-3-ol","1S/C20H41NO2/c1-17(22)13-11-9-7-5-3-4-6-8-10-12-14-19-15-16-20(23)18(2)21-19/h17-23H,3-16H2,1-2H3/t17?,18-,19+,20+/m1/s1
+","POUWXWGBWYDTMW-HNNZKPGWSA-N
+",3.0,3.0,5.497,1.0
