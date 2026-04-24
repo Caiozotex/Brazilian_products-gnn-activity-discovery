@@ -1,27 +1,15 @@
 name: nubbe-env
-
 channels:
   - conda-forge
-
 dependencies:
   - python=3.10
-
-  # ---- Required for download_nubbe.py ----
   - pandas
+  - numpy<2
   - rdflib
-
-  # ---- NOT needed yet (keep for later) ----
-  # - jupyterlab
-  # - numpy
-  # - pytorch
-  # - pytorch-geometric
-  # - pytorch-sparse
-  # - pytorch-cluster
-  # - rdkit
-  # - deepchem
-  # - scikit-learn
-  # - matplotlib
-  # - seaborn
-  # - plotly
-  # - wandb
-  # - tensorboard
+  - tqdm
+  - rdkit
+  - pytorch
+  - pytorch-geometric
+  - networkx
+  - matplotlib
+  - seaborn

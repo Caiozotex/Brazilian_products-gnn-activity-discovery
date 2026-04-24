@@ -1,3 +1,11 @@
 pandas
 rdflib
-numpy
+numpy<2
+tqdm
+rdkit-pypi
+torch
+torch-geometric
+rdflib
+networkx
+matplotlib
+seaborn
