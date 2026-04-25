@@ -1,0 +1,5 @@
+Number of vertices: 7932
+Number of edges: 54567
+Average degree: 13.76
+Number of connected components: 1
+Component sizes (sorted): [7932]
