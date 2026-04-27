@@ -16,6 +16,20 @@ class Tox21Model(nn.Module):
         graph_emb = self.pool(node_emb, batch)
         return self.head(graph_emb)
 
+class HIVModel(nn.Module):
+    """Encoder + binary classification head for HIV (active/inactive)."""
+    def __init__(self, encoder, hidden_dim=128, num_tasks=1, dropout_head=0.2):
+        super().__init__()
+        self.encoder = encoder
+        self.pool = GraphPooling()
+        # Head: hidden_dim → 1 (logit for binary classification)
+        self.head = MLPHead(hidden_dim, num_tasks, hidden_dim, dropout_head)
+
+    def forward(self, x, edge_index, edge_attr, batch):
+        node_emb = self.encoder(x, edge_index, edge_attr)
+        graph_emb = self.pool(node_emb, batch)   # shape (batch_size, hidden_dim)
+        return self.head(graph_emb)              # shape (batch_size, 1)
+
 
 class NuBBEModel(nn.Module):
     """Same encoder but with a 1-task MLP head (binary antioxidant/ROS)."""

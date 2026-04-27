@@ -33,11 +33,12 @@ def main():
     # Add nodes with attributes
     for i in range(num_nodes):
         if node_dataset[i] == 0:
-            label = "Tox21"
+            label = "HIV"
         else:
-            label = "NuBBE"
+            label = "Antiviral"
         # Optionally include original index in the ID
-        node_id = f"{label}_{i}" if label == "NuBBE" else f"Tox21_{i}"
+        # node_id = f"{label}_{i}" if label == "NuBBE" else f"Tox21_{i}"
+        node_id = f"{label}_{i}" if label == "Antiviral" else f"HIV_{i}"
         # or use plain integer ID if you prefer
         G.add_node(i, dataset=label, name=node_id)
 
@@ -51,8 +52,10 @@ def main():
     print(f"Graph exported to {args.output}")
     print(f"  Nodes: {G.number_of_nodes()}")
     print(f"  Edges: {G.number_of_edges()}")
-    print(f"  Tox21 nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='Tox21')}")
-    print(f"  NuBBE nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='NuBBE')}")
+    # print(f"  Tox21 nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='Tox21')}")
+    # print(f"  NuBBE nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='NuBBE')}")
+    print(f"  HIV nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='HIV')}")
+    print(f"  Antiviral nodes: {sum(1 for _, attr in G.nodes(data=True) if attr['dataset']=='Antiviral')}")
 
 if __name__ == "__main__":
     main()

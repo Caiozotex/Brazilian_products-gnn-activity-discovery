@@ -5,8 +5,8 @@ import numpy as np
 from torch_geometric.data import Data
 
 from src.models.gin_model import GINEEncoder
-from src.models.task_models import Tox21Model, NuBBEModel
-from src.train.pretrain import pretrain_tox21
+from src.models.task_models import Tox21Model, NuBBEModel, HIVModel
+from src.train.pretrain import pretrain_tox21, pretrain_hiv
 from src.train.finetune import finetune_nubbe
 from src.utils.graph_utils import extract_embeddings,build_knn_similarity_graph_faiss
 
@@ -18,9 +18,10 @@ if __name__ == "__main__":
     TOX21_DIR = "data/processed/graphs_tox21"
     ANTIOX_DIR = "data/processed/graphs_AntioxidantRos"
 
-    # -------------------------------------------------------
-    # Load ALL graphs into a list
-    # -------------------------------------------------------
+
+    # # -------------------------------------------------------
+    # # Load ALL graphs into a list
+    # # -------------------------------------------------------
     # Tox21
     tox21_list = []
     for fname in sorted(os.listdir(TOX21_DIR)):
@@ -56,18 +57,22 @@ if __name__ == "__main__":
     tox21_loader = DataLoader(tox21_list, batch_size=32, shuffle=True)
     nubbe_loader = DataLoader(nubbe_list, batch_size=32, shuffle=True)
 
-    # dimensions
+
+
+    # # dimensions
     num_node_feats = 35      
     num_edge_feats = 9      
 
-    # # 1. Build encoder
-    # encoder = GINEEncoder(
-    #     in_channels=num_node_feats,
-    #     edge_dim=num_edge_feats,
-    #     hidden_channels=128,
-    #     num_layers=4,
-    #     dropout=0.2
-    # ).to(device)
+    # 1. Build encoder
+    encoder = GINEEncoder(
+        in_channels=num_node_feats,
+        edge_dim=num_edge_feats,
+        hidden_channels=128,
+        num_layers=4,
+        dropout=0.2
+    ).to(device)
+
+
 
     # tox21_model = Tox21Model(encoder, hidden_dim=128, num_tasks=12, dropout_head=0.2).to(device)
     # optimizer = torch.optim.Adam(tox21_model.parameters(), lr=1e-3)
@@ -87,9 +92,10 @@ if __name__ == "__main__":
     # )
 
     # Load best encoder (no head)
-    # encoder = GINEEncoder(in_channels=num_node_feats,edge_dim=num_edge_feats, hidden_channels=128, num_layers=4, dropout=0.2).to(device)
-    # encoder.load_state_dict(torch.load("models/checkpoints/tox21/best_encoder.pt"))
-    # encoder.eval()
+    encoder = GINEEncoder(in_channels=num_node_feats,edge_dim=num_edge_feats, hidden_channels=128, num_layers=4, dropout=0.2).to(device)
+    encoder.load_state_dict(torch.load("models/checkpoints/tox21/best_encoder.pt"))
+    encoder.eval()
+
 
 
     # 2. Build NuBBE model with new head
@@ -112,17 +118,17 @@ if __name__ == "__main__":
     # )
 
     # Option A: Tox21‑pretrained encoder
-    encoder = GINEEncoder(in_channels=num_node_feats,edge_dim=num_edge_feats, hidden_channels=128, num_layers=4, dropout=0.2).to(device)
-    encoder.load_state_dict(torch.load("models/checkpoints/tox21/best_encoder.pt", map_location="cpu"))
+    # encoder = GINEEncoder(in_channels=num_node_feats,edge_dim=num_edge_feats, hidden_channels=128, num_layers=4, dropout=0.2).to(device)
+    # encoder.load_state_dict(torch.load("models/checkpoints/tox21/best_encoder.pt", map_location="cpu"))
 
-    # Option B: NuBBE fine‑tuned encoder (if you fine‑tuned)
-    # encoder.load_state_dict(torch.load("models/checkpoints/nubbe_antioxidant/best_encoder.pt", map_location="cpu"))
+    # # Option B: NuBBE fine‑tuned encoder (if you fine‑tuned)
+    # # encoder.load_state_dict(torch.load("models/checkpoints/nubbe_antioxidant/best_encoder.pt", map_location="cpu"))
 
-    encoder.eval()
+    # encoder.eval()
 
-    # Move to GPU if available
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-    encoder.to(device)
+    # # Move to GPU if available
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # encoder.to(device)
 
 
 
@@ -134,10 +140,10 @@ if __name__ == "__main__":
     n_tox = tox21_emb.shape[0]          # number of Tox21 molecules
     n_nub = nubbe_emb.shape[0]          # number of NuBBE molecules
     all_emb = np.concatenate([tox21_emb, nubbe_emb], axis=0)
- 
+
 
     # # 5. Build k-NN similarity graph
-    edge_index, num_nodes = build_knn_similarity_graph_faiss(all_emb, k=10, threshold=0.6)
+    edge_index, num_nodes = build_knn_similarity_graph_faiss(all_emb, k=10, threshold=0.9)
     print(f"Graph built: {num_nodes} nodes")
 
     # Remove duplicate undirected edges (keep i < j)
@@ -159,8 +165,13 @@ if __name__ == "__main__":
     num_nodes=num_nodes,
     node_dataset=node_dataset)
 
-    save_dir = "results/similiarity_graph"
-    save_path = os.path.join(save_dir, "undirected_knn_graph.pt")
+    save_dir = "results/similiarity_graph_tox21"
+    os.makedirs(save_dir, exist_ok=True)
+
+
+    save_path = os.path.join(save_dir, "undirected_graph_tox21.pt")
     torch.save(similarity_graph_undirected, save_path)
     print(f"Undirected graph saved to {save_path}")
+
+
 
