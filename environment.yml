@@ -1,0 +1,15 @@
+name: nubbe-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pandas
+  - numpy<2
+  - rdflib
+  - tqdm
+  - rdkit
+  - pytorch
+  - pytorch-geometric
+  - networkx
+  - matplotlib
+  - seaborn

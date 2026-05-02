@@ -1,0 +1,2 @@
+Threshold	Vertices	Edges	Avg Degree	Components
+0.9	7932	67228	16.95	1849

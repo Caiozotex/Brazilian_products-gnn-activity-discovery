@@ -1,0 +1,5 @@
+Number of vertices: 45
+Number of edges: 48
+Average degree: 2.13
+Number of connected components: 1
+Component sizes (sorted): [45]

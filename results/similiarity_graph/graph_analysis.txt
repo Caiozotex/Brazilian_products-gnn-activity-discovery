@@ -1,0 +1,4 @@
+Number of vertices: 7932
+Number of edges: 67228
+Average degree: 16.95
+Number of components: 1849
