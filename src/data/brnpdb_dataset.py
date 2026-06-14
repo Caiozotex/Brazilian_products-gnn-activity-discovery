@@ -567,18 +567,18 @@ class BrNPDBAntiviralDataset(Dataset):
         
 
 # Create the directorys if it doesn't exist
-PROCESSED_DIR_CytotoxicAnticancer = "data/processed/graphs_CytotoxicAnticancer"
-os.makedirs(PROCESSED_DIR_CytotoxicAnticancer, exist_ok=True)
+# PROCESSED_DIR_CytotoxicAnticancer = "data/processed/graphs_CytotoxicAnticancer"
+# os.makedirs(PROCESSED_DIR_CytotoxicAnticancer, exist_ok=True)
 
-PROCESSED_DIR_AntioxidantRos = "data/processed/graphs_AntioxidantRos"
-os.makedirs(PROCESSED_DIR_AntioxidantRos, exist_ok=True)
+# PROCESSED_DIR_AntioxidantRos = "data/processed/graphs_AntioxidantRos"
+# os.makedirs(PROCESSED_DIR_AntioxidantRos, exist_ok=True)
 
 
-PROCESSED_DIR_Clintox = "data/processed/graphs_clintox"
-os.makedirs(PROCESSED_DIR_Clintox, exist_ok=True)
+# PROCESSED_DIR_Clintox = "data/processed/graphs_clintox"
+# os.makedirs(PROCESSED_DIR_Clintox, exist_ok=True)
 
-PROCESSED_DIR_Tox21 = "data/processed/graphs_tox21"
-os.makedirs(PROCESSED_DIR_Tox21, exist_ok=True)
+# PROCESSED_DIR_Tox21 = "data/processed/graphs_tox21"
+# os.makedirs(PROCESSED_DIR_Tox21, exist_ok=True)
 
 
 PROCESSED_DIR_HIV = "data/processed/graphs_hiv"
@@ -589,65 +589,65 @@ os.makedirs(PROCESSED_DIR_ANTIVIRAL, exist_ok=True)
 
 
 #=================Cytotoxic and Anticancer graph compounds===============
-dataset_1 = BRNPDBDataset(
-    csv_path="data/processed/nubbe_cytotoxic_anticancer.csv",
-    processed_dir="data/processed/graphs_CytotoxicAnticancer",
-)
+# dataset_1 = BRNPDBDataset(
+#     csv_path="data/processed/nubbe_cytotoxic_anticancer.csv",
+#     processed_dir="data/processed/graphs_CytotoxicAnticancer",
+# )
 
-print("Dataset size:", len(dataset_1))
+# print("Dataset size:", len(dataset_1))
 
-data, props = dataset_1[0]
+# data, props = dataset_1[0]
 
-print(data)
-print("Num nodes:", data.num_nodes)
-print("Properties:", props)
-print("Label:", data.y)
+# print(data)
+# print("Num nodes:", data.num_nodes)
+# print("Properties:", props)
+# print("Label:", data.y)
 
 
 #=================Antioxidant and ROS graph compounds===============
-dataset_2 = BRNPDBDataset(
-    csv_path="data/processed/nubbe_antioxidant_ros.csv",
-    processed_dir="data/processed/graphs_AntioxidantRos",
-)
+# dataset_2 = BRNPDBDataset(
+#     csv_path="data/processed/nubbe_antioxidant_ros.csv",
+#     processed_dir="data/processed/graphs_AntioxidantRos",
+# )
 
-print("Dataset size:", len(dataset_2))
+# print("Dataset size:", len(dataset_2))
 
-data, props = dataset_2[0]
+# data, props = dataset_2[0]
 
-print(data)
-print("Num nodes:", data.num_nodes)
-print("Properties:", props)
-print("Label:", data.y)
+# print(data)
+# print("Num nodes:", data.num_nodes)
+# print("Properties:", props)
+# print("Label:", data.y)
 
 #=================Clintox graph compounds===============
-dataset_3 = ClintoxDataset(
-    csv_path="data/external/clintox.csv",
-    processed_dir="data/processed/graphs_clintox",
-)
+# dataset_3 = ClintoxDataset(
+#     csv_path="data/external/clintox.csv",
+#     processed_dir="data/processed/graphs_clintox",
+# )
 
-print("Dataset size:", len(dataset_3))
+# print("Dataset size:", len(dataset_3))
 
-data, props = dataset_3[0]
+# data, props = dataset_3[0]
 
-print(data)
-print("Num nodes:", data.num_nodes)
-print("Properties:", props)
-print("Label:", data.y)
+# print(data)
+# print("Num nodes:", data.num_nodes)
+# print("Properties:", props)
+# print("Label:", data.y)
 
 #=================Tox21 graph compounds===============
-dataset_4 = Tox21Dataset(
-    csv_path="data/external/tox21.csv",
-    processed_dir="data/processed/graphs_tox21",
-)
+# dataset_4 = Tox21Dataset(
+#     csv_path="data/external/tox21.csv",
+#     processed_dir="data/processed/graphs_tox21",
+# )
 
-print("Dataset size:", len(dataset_4))
+# print("Dataset size:", len(dataset_4))
 
-data, props = dataset_4[0]
+# data, props = dataset_4[0]
 
-print(data)
-print("Num nodes:", data.num_nodes)
-print("Properties:", props)
-print("Label:", data.y)
+# print(data)
+# print("Num nodes:", data.num_nodes)
+# print("Properties:", props)
+# print("Label:", data.y)
 
 # =================HIV dataset===============
 dataset_hiv = HIVDataset(
