@@ -581,8 +581,8 @@ PROCESSED_DIR_Tox21 = "data/processed/graphs_tox21"
 os.makedirs(PROCESSED_DIR_Tox21, exist_ok=True)
 
 
-# PROCESSED_DIR_HIV = "data/processed/graphs_hiv"
-# os.makedirs(PROCESSED_DIR_HIV, exist_ok=True)
+PROCESSED_DIR_HIV = "data/processed/graphs_hiv"
+os.makedirs(PROCESSED_DIR_HIV, exist_ok=True)
 
 PROCESSED_DIR_ANTIVIRAL = "data/processed/graphs_antiviral"
 os.makedirs(PROCESSED_DIR_ANTIVIRAL, exist_ok=True)

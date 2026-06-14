@@ -1,0 +1,148 @@
+rank,node_id,brnpdb_id,common_name,hiv_activity_score
+1,41176,5797,"9,12-Octadecadienoic acid, (9E,12E)-",0.90956986
+2,41204,7150,"9,12-Octadecadienoic acid (9Z,12Z)-",0.90956986
+3,41162,3895,(E)-3-(4-Hydroxyphenyl)acrylic acid,0.8861693
+4,41210,7287,"L-Galactose, 6-deoxy-",0.87925464
+5,41215,7374,"L-Mannose, 6-deoxy-",0.87925464
+6,41233,8239,"9,12-Octadecadienoic acid",0.872014
+7,41259,9477,"Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfate)",0.84533393
+8,41209,7267,"β-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deoxy-α-L-mannopyranosyl)-, 4-[(2E)-3-(3,4-dihydroxyphenyl)-2-propenoate]",0.8080888
+9,41212,7316,"5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-α,α,3,8-tetramethyl-, (3S,5R,8S)-",0.8075108
+10,41266,9610,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)-",0.79472965
+11,41200,6859,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-",0.7840028
+12,41267,9611,"Cycloocta[1,2-b:5,6-b′]diindole-6,13-dicarboxylic acid, 5,12-dihydro-, 6,13-dimethyl ester",0.7719448
+13,41201,6940,"Olean-12-en-3-ol, (3β)-",0.74247575
+14,41242,8749,"L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-α-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7→23)-disulfide",0.7278219
+15,41171,5488,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β,19α,20β)-",0.72496706
+16,41222,7619,Dodecanedioic acid,0.72154313
+17,41241,8699,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aS,4S,4aR,7S,7aR,7bR)-",0.7143887
+18,41182,6310,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β)-",0.7138629
+19,41227,7858,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aS,7R,7aS,7bS)-",0.6964706
+20,41164,5244,"1H-Cycloprop[e]azulen-7-ol, 1a,2,3,5,6,7,7a,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,7S,7aS,7bR)-",0.6930099
+21,41206,7198,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aR,7R,7aS,7bS)-",0.6826553
+22,41153,2144,myristic acid,0.6743881
+23,41177,5806,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7R,7aS,7bS)-",0.66861296
+24,41226,7807,Amphotericin B,0.641366
+25,41184,6397,"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-",0.61802137
+26,41193,6621,"Urs-12-en-28-oic acid, 3-hydroxy-, (3α)-",0.60298795
+27,41255,9290,"Card-20(22)-enolide, 3-[(2,6-dideoxy-4-O-β-D-glucopyranosyl-β-D-ribo-hexopyranosyl)oxy]-14-hydroxy-, (3β,5β)-",0.5888805
+28,41223,7674,Octadecanal,0.5813607
+29,41170,5456,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9S)-",0.5609905
+30,41165,5308,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4Z,9S)-",0.55990434
+31,41151,2142,capric acid,0.55784667
+32,41137,1497,hexadecanoic acid,0.55488265
+33,41127,10017,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9R)-",0.53639674
+34,41152,2143,lauric acid,0.49658498
+35,41166,5327,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7R,7aR,7bS)-",0.37299317
+36,41217,7431,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aS,7R,7aR,7bS)-",0.36104116
+37,41169,5437,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-",0.3579713
+38,41221,7602,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7R,7aS,7bS)-rel-",0.34759685
+39,41268,9647,"5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methylene-, (1R,4R,6R,10S)-",0.1745844
+40,41254,9283,"5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methylene-, (1S,4R,6R,10R)-",0.17458436
+41,41173,5696,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-",0.15115434
+42,41202,7030,"1H-Cycloprop[e]azulene, decahydro-1,1,4-trimethyl-7-methylene-, (1aR,4R,4aR,7aR,7bR)-",0.11698933
+43,41240,8658,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1S,4E,9R)-",0.104897186
+44,41174,5783,"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, 3a,3b,4,5,6,7-hexahydro-3,7-dimethyl-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-",0.06735768
+45,41264,9596,"1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-rel-",0.038467724
+46,41189,6585,"1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-",0.03846772
+47,41253,9218,"Cyclobuta[1,2:3,4]dicyclopentene, decahydro-3a-methyl-6-methylene-1-(1-methylethyl)-, (1S,3aS,3bR,6aS,6bR)-",0.004713687
+48,41238,8640,"1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aS,4aS,7R,7aS,7bS)-",0.0
+49,41224,7698,"1,6-Cyclodecadiene, 1-methyl-5-methylene-8-(1-methylethyl)-, (1E,6E,8S)-",0.0
+50,41239,8651,"Stigmast-5-en-3-ol, (3β,24S)-",0.0
+51,41236,8570,"6H-Purin-6-one, 2-amino-1,9-dihydro-9-[(2-hydroxyethoxy)methyl]-",0.0
+52,41134,1223,3-O-methylquercetin,0.0
+53,41133,122,Quercetin,0.0
+54,41237,8606,"α-D-Galactopyranose, 6-deoxy-",0.0
+55,41135,1380,Linalool,0.0
+56,41235,8558,"Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aR)-",0.0
+57,41234,8304,D-Arabinose,0.0
+58,41225,7805,"Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1R,2S,6S,7S,8S)-",0.0
+59,41232,8237,"2(5H)-Oxepinone, 7-[6-(acetyloxy)-1-hydroxy-4-hexen-1-yl]-6,7-dihydro-7-methyl-3-(4-methyl-3-penten-1-yl)-",0.0
+60,41244,8833,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2R,4R)-rel-",0.0
+61,41231,8123,D-Mannose,0.0
+62,41230,8078,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(β-D-xylopyranosyloxy)-",0.0
+63,41229,7884,"Stigmast-5-en-3-ol, (3β,24ξ)-",0.0
+64,41228,7881,L-Lyxose,0.0
+65,41136,1389,Linalyl acetate,0.0
+66,41139,1741,Terpinen-4-ol,0.0
+67,41138,1737,Sabinene,0.0
+68,41243,8780,"2(3H)-Furanone, dihydro-4-hydroxy-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-, (4S,5S)-",0.0
+69,41250,9032,"2(5H)-Furanone, 5-(2,4,6-octatriyn-1-yl)-, (5R)-",0.0
+70,41245,8883,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-6-β-D-glucopyranosyl-5,7-dihydroxy-",0.0
+71,41246,8910,L-Arabinose,0.0
+72,41272,9918,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(D-xylopyranosyloxy)-",0.0
+73,41271,9811,"12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-",0.0
+74,41270,9756,"4H-1-Benzopyran-4-one, 3-(arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+75,41269,9705,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5Z,8S)-",0.0
+76,41129,10068,"α-L-Mannopyranose, 6-deoxy-",0.0
+77,41130,10174,"4,6-Cyclopentacycloundecenediol, 1,2,3,3a,4,5,6,9,10,12a-decahydro-3-(1-hydroxy-1-methylethyl)-6,10,12a-trimethyl-, (3R,3aS,4S,6S,7E,10R,11E,12aR)-rel-(-)-",0.0
+78,41265,9601,"2(3H)-Furanone, 5-(1,8-dihydroxy-2,4,6-octatriyn-1-yl)dihydro-, (5S)-",0.0
+79,41263,9574,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2S,4R)-rel-",0.0
+80,41262,9546,"4H-1-Benzopyran-4-one, 3-(α-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+81,41261,9519,"9H-Xanthen-9-one, 2-β-D-glucopyranosyl-1,3,6,7-tetrahydroxy-",0.0
+82,41260,949,ω-fenil alcanoic acid,0.0
+83,41131,10222,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5-hydroxy-3,7-dimethoxy-6-methyl-",0.0
+84,41258,9464,D-Ribose,0.0
+85,41257,9449,"1,4,8-Cycloundecatriene, 2,6,6,9-tetramethyl-, (1E,4E,8E)-",0.0
+86,41256,9377,"Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1S,2R,6R,7R,8S)-",0.0
+87,41132,10226,"Bicyclo[8.1.0]undeca-2,6-diene, 3,7,11,11-tetramethyl-, (1S,2E,6E,10R)-",0.0
+88,41252,9216,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(β-D-glucopyranosyloxy)-5,7-dihydroxy-",0.0
+89,41251,9109,"β-D-Glucopyranoside, 4-[[[(2E)-3-(3,4-dihydroxyphenyl)-1-oxo-2-propen-1-yl]oxy]methyl]-2-hydroxyphenyl",0.0
+90,41249,9023,"2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2E)-",0.0
+91,41248,9018,D-Galactose,0.0
+92,41247,8971,D-Glucose,0.0
+93,41140,1745,"1,8-Cineole",0.0
+94,41160,3887,4-nerolidylcathecol,0.0
+95,41220,7515,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(β-D-galactopyranosyloxy)-5,7-dihydroxy-",0.0
+96,41192,6604,"Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 9-(acetyloxy)-8-[(1R)-1,5-dimethyl-4-hexen-1-yl]-5-methyl-, (1R,5R,8S,9R)-",0.0
+97,41190,6593,D-Glucuronic acid,0.0
+98,41188,6567,"2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-tetramethyl-, (2R,4aR)-",0.0
+99,41187,6561,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8S)-",0.0
+100,41186,6560,"4H-1-Benzopyran-4-one, 3-[(6-deoxy-α-L-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+101,41185,6523,"4H-1-Benzopyran-4-one, 6-β-D-glucopyranosyl-5,7-dihydroxy-2-(4-hydroxyphenyl)-",0.0
+102,41149,1915,tricyclene,0.0
+103,41183,6361,"1H-Naphtho[2,1-a]xanthene-2,10-diol, 2,3,4,4a,4b,5,6,6a,12,12a,12b,13,14,14a-tetradecahydro-1,1,4a,6a,8,12b-hexamethyl-, (2S,4aR,4bS,6aS,12aS,12bS,14aR)-",0.0
+104,41150,2027,Camphene,0.0
+105,41181,6231,Arabinose,0.0
+106,41180,6009,"1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-methoxy-3-methylphenyl)methyl]-5,6,8a-trimethyl-2-(1-methylethylidene)-, (1S,4aR,5S,6S,8aR)-",0.0
+107,41179,5936,"2(3H)-Furanone, dihydro-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-, (5S)-",0.0
+108,41178,5919,"4H-1-Benzopyran-4-one, 2,3-dihydro-3,5,7-trihydroxy-2-(4-methoxyphenyl)-, (2R,3R)-",0.0
+109,41154,3046,Malic acid,0.0
+110,41175,5788,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8R)-",0.0
+111,41172,5613,"4H-1-Benzopyran-4-one, 5,6,7-trihydroxy-3-methoxy-2-(4-methoxyphenyl)-",0.0
+112,41155,3151,farnesol,0.0
+113,41156,3278,nerolidol,0.0
+114,41168,5412,"4H-1-Benzopyran-4-one, 3-(β-D-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+115,41167,5353,"4H-1-Benzopyran-4-one, 3-(β-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+116,41157,3470,Ferulic acid,0.0
+117,41158,3471,caffeic acid,0.0
+118,41163,5243,"4H-1-Benzopyran-4-one, 3-(β-D-allopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+119,41159,3631,Tetradecanal,0.0
+120,41191,6597,"Bicyclo[3.1.0]hexan-3-ol, 4-methylene-1-(1-methylethyl)-, 3-acetate, (1S,3S,5S)-",0.0
+121,41148,1914,limonene,0.0
+122,41219,7499,"2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4R,5S)-rel-",0.0
+123,41194,6636,"4H-Benzo[de][1,6]naphthyridine, 8,9-dimethoxy-4-methyl-",0.0
+124,41218,7477,"2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4S,5R)-",0.0
+125,41161,3892,Kaempferide,0.0
+126,41216,7404,"12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-, (1R,3E,7E,11R)-",0.0
+127,41141,1746,β-Pinene,0.0
+128,41214,7367,"2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-tetramethyl-, (2R,4aS)-",0.0
+129,41213,7333,"Stigmast-5-en-3-ol, (3β)-",0.0
+130,41142,1747,Myrcene,0.0
+131,41211,7314,"1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7S,7aR,7bR)-",0.0
+132,41143,1750,γ-Terpinene,0.0
+133,41144,1752,α-Terpinolene,0.0
+134,41208,7246,"2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2Z)-",0.0
+135,41207,7233,Stigmast-5-en-3-ol,0.0
+136,41145,1755,α-Pinene,0.0
+137,41205,7187,"4H-1-Benzopyran-4-one, 3-[(6-deoxy-β-D-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-",0.0
+138,41146,1828,Benzyl benzoate,0.0
+139,41203,7099,"Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aS)-",0.0
+140,41147,1902,a-terpinene,0.0
+141,41128,10052,"2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-",0.0
+142,41199,6760,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate",0.0
+143,41198,6715,D-Galacturonic acid,0.0
+144,41197,6695,"Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 8-[(1R)-1,5-dimethyl-4-hexen-1-yl]-9-hydroxy-5-methyl-, (1R,5R,8S,9R)-",0.0
+145,41196,6665,"1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-methoxy-3-methylphenyl)methyl]-5,6,8a-trimethyl-2-(1-methylethylidene)-, methyl ester, [1S-(1α,4aβ,5β,6β,8aα)]-",0.0
+146,41195,6662,"2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-, (2E)-",0.0
+147,41273,9971,D-Xylose,0.0

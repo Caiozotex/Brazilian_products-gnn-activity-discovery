@@ -8,7 +8,7 @@ from src.models.gin_model import GINEEncoder
 from src.models.task_models import Tox21Model, NuBBEModel, HIVModel
 from src.train.pretrain import pretrain_tox21, pretrain_hiv
 from src.train.finetune import finetune_nubbe
-from src.utils.graph_utils import extract_embeddings,build_knn_similarity_graph_faiss
+from src.utils.graph_utils import extract_embeddings,build_knn_similarity_graph_faiss,extract_embeddings_with_metadata
 
 
 if __name__ == "__main__":
@@ -90,8 +90,10 @@ if __name__ == "__main__":
     # -------------------------------------------------------
     # tox21_loader = DataLoader(tox21_list, batch_size=32, shuffle=True)
     # nubbe_loader = DataLoader(nubbe_list, batch_size=32, shuffle=True)
-    hiv_loader = DataLoader(hiv_list, batch_size=32, shuffle=True)
-    antiviral_loader = DataLoader(antiviral_list, batch_size=32, shuffle=True)
+
+    #returns shuffle=True if you are gonna train the model
+    hiv_loader = DataLoader(hiv_list, batch_size=32, shuffle=False)
+    antiviral_loader = DataLoader(antiviral_list, batch_size=32, shuffle=False)
 
 
     # # dimensions
@@ -201,19 +203,50 @@ if __name__ == "__main__":
 
     # # # 4. Extract embeddings for all molecules
     hiv_emb   = extract_embeddings(encoder, hiv_loader, device)
-    antiviral_emb   = extract_embeddings(encoder, antiviral_loader, device)
-    assert np.all(np.isfinite(hiv_emb)), "HIV embeddings contain NaN or Inf"
-    assert np.all(np.isfinite(antiviral_emb)), "NuBBE embeddings contain NaN or Inf"
-    n_hiv = hiv_emb.shape[0]          # number of HIV molecules
+
+    antiviral_emb, antiviral_ids, antiviral_names = (extract_embeddings_with_metadata(encoder,antiviral_loader,device))
+
+    n_hiv = hiv_emb.shape[0]
+    n_antiviral = antiviral_emb.shape[0]
+
+    all_brnpdb_ids = [-1] * n_hiv + [
+        int(x) for x in antiviral_ids
+    ]
+
+    all_common_names = [""] * n_hiv + [
+        str(x) for x in antiviral_names
+    ]
+
+
+    #assert np.all(np.isfinite(hiv_emb)), "HIV embeddings contain NaN or Inf"
+    #assert np.all(np.isfinite(antiviral_emb)), "NuBBE embeddings contain NaN or Inf"
+    #n_hiv = hiv_emb.shape[0]          # number of HIV molecules
     #print(n_hiv)
-    n_antiviral = antiviral_emb.shape[0]    # number of NuBBE molecules
+    #n_antiviral = antiviral_emb.shape[0]    # number of NuBBE molecules
     #print(n_antiviral)
     all_emb = np.concatenate([hiv_emb, antiviral_emb], axis=0)
- 
+
+
+
+    # -------------------------------------------------------
+    # Build hiv_active label vector
+    # -------------------------------------------------------
+
+    hiv_labels = []
+    for data in hiv_list:
+        # data.y is already shape (1,)
+        hiv_labels.append(float(data.y.item()))
+
+    antiviral_labels = [-1.0] * n_antiviral  # BrNPDB = unlabeled
+
+    hiv_active = torch.tensor(hiv_labels + antiviral_labels, dtype=torch.float)
+
+    unique, counts = torch.unique(hiv_active, return_counts=True)
+    print(dict(zip(unique.tolist(), counts.tolist())))
 
     # # # 5. Build k-NN similarity graph
-    # edge_index, num_nodes = build_knn_similarity_graph_faiss(all_emb, k=10, threshold=0.6)
-    # print(f"Graph built: {num_nodes} nodes")
+    edge_index, edge_attr, num_nodes = build_knn_similarity_graph_faiss(all_emb, k=10, threshold=0.9)
+    print(f"Graph built: {num_nodes} nodes")
 
     # # Remove duplicate undirected edges (keep i < j)
     # mask = edge_index[0] < edge_index[1]
@@ -223,46 +256,43 @@ if __name__ == "__main__":
     # print(f"Directed edges (both dirs): {edge_index.shape[1]}")
     # print(f"Undirected edges (unique): {undirected_edge_index.shape[1]}")
 
-    # # # # Create a node attribute that indicates the dataset:
-    # # # # 0 = Tox21, 1 = NuBBE
-    # node_dataset = torch.zeros(num_nodes, dtype=torch.long)
-    # node_dataset[n_tox : n_tox + n_nub] = 1   # indices after Tox21 are NuBBE
-
-    # # # # The resulting graph can be wrapped as a PyG Data object:
-    # similarity_graph_undirected = Data(
-    # edge_index=undirected_edge_index,
-    # num_nodes=num_nodes,
-    # node_dataset=node_dataset)
-
-    # save_dir = "results/similiarity_graph"
-    # save_path = os.path.join(save_dir, "undirected_knn_graph.pt")
-    # torch.save(similarity_graph_undirected, save_path)
-    # print(f"Undirected graph saved to {save_path}")
-
-
-    # # # 5. Build k-NN similarity graph
-    edge_index, num_nodes = build_knn_similarity_graph_faiss(all_emb, k=10, threshold=0.9)
-    print(f"Graph built: {num_nodes} nodes")
-
-    # Remove duplicate undirected edges (keep i < j)
-    mask = edge_index[0] < edge_index[1]
-    undirected_edge_index = edge_index[:, mask]
-
-    # 2. Optional: verify it's roughly half
-    print(f"Directed edges (both dirs): {edge_index.shape[1]}")
-    print(f"Undirected edges (unique): {undirected_edge_index.shape[1]}")
-
     # # # Create a node attribute that indicates the dataset:
     # # # 0 = HIV, 1 = Antiviral
     node_dataset = torch.zeros(num_nodes, dtype=torch.long)
-    node_dataset[n_hiv : n_hiv + n_antiviral] = 1   # indices after Tox21 are NuBBE
+    node_dataset[n_hiv : n_hiv + n_antiviral] = 1   # indices after are NuBBE
 
     # # # The resulting graph can be wrapped as a PyG Data object:
-    similarity_graph_undirected = Data(
-    edge_index=undirected_edge_index,
-    num_nodes=num_nodes,
-    node_dataset=node_dataset)
+    # similarity_graph_undirected = Data(
+    # edge_index=edge_index,
+    # num_nodes=num_nodes,
+    # node_dataset=node_dataset)
 
+
+
+    similarity_graph_undirected = Data(
+    x=torch.tensor(all_emb, dtype=torch.float),
+    edge_index=edge_index,
+    edge_attr=edge_attr,
+    num_nodes=num_nodes,
+    hiv_active=hiv_active,
+    node_dataset=node_dataset
+    )
+
+    similarity_graph_undirected = Data(
+    x=torch.tensor(all_emb, dtype=torch.float),
+    edge_index=edge_index,
+    edge_attr=edge_attr,
+    num_nodes=num_nodes,
+    hiv_active=hiv_active,
+    node_dataset=node_dataset
+)
+
+    similarity_graph_undirected.brnpdb_id = torch.tensor(
+        all_brnpdb_ids,
+        dtype=torch.long
+    )
+
+    similarity_graph_undirected.common_name = all_common_names
 
 
     save_dir = "results/similiarity_graph_hiv"
@@ -272,3 +302,9 @@ if __name__ == "__main__":
     torch.save(similarity_graph_undirected, save_path)
     print(f"Undirected graph saved to {save_path}")
 
+
+
+    
+
+
+ 

@@ -28,6 +28,58 @@ def extract_embeddings(encoder, dataloader, device):
     all_emb = torch.cat(embeddings, dim=0)
     return all_emb.numpy()
 
+@torch.no_grad()
+def extract_embeddings_with_metadata(
+    encoder,
+    dataloader,
+    device
+):
+    encoder.eval()
+
+    pool = GraphPooling()
+
+    embeddings = []
+
+    ids = []
+    names = []
+
+    for batch in dataloader:
+
+        batch = batch.to(device)
+
+        node_emb = encoder(
+            batch.x,
+            batch.edge_index,
+            batch.edge_attr
+        )
+
+        graph_emb = pool(
+            node_emb,
+            batch.batch
+        )
+
+        embeddings.append(
+            graph_emb.cpu()
+        )
+
+        # metadata in same order as graph_emb rows
+        ids.extend(batch.brnpdb_id)
+
+        names.extend(
+            list(batch.common_name)
+        )
+
+    all_emb = torch.cat(
+        embeddings,
+        dim=0
+    )
+
+    return (
+        all_emb.numpy(),
+        ids,
+        names
+    )
+
 # ------------------------------
 # 8. Cosine Similarity & k-NN Graph
 # ------------------------------
@@ -73,31 +125,81 @@ def build_knn_similarity_graph(embeddings, k=10, threshold=0.6):
     return edge_index, num_nodes
 
 def build_knn_similarity_graph_faiss(embeddings, k=10, threshold=0.6):
-    """
-    Use Faiss (cosine similarity -> inner product on L2-normalized vectors).
-    Much faster and memory-friendly for large N.
-    """
     emb = np.ascontiguousarray(embeddings, dtype=np.float32)
-    # L2-normalize so inner product = cosine similarity
+    
+    # Normalize → cosine similarity = inner product
     emb = emb / np.linalg.norm(emb, axis=1, keepdims=True)
     n = emb.shape[0]
     
-    # Build index
-    index = faiss.IndexFlatIP(emb.shape[1])   # inner product
+    index = faiss.IndexFlatIP(emb.shape[1])
     index.add(emb)
     
-    # Search for k+1 neighbours (the first hit will be the point itself)
     similarities, indices = index.search(emb, k + 1)
     
     edge_list = []
+    edge_weights = []
+
     for i in range(n):
         for j_idx, sim in zip(indices[i, 1:], similarities[i, 1:]):  # skip self
             if sim >= threshold:
                 edge_list.append([i, j_idx])
-    
+                edge_weights.append(sim)
+
+    if len(edge_list) == 0:
+        edge_index = torch.empty((2, 0), dtype=torch.long)
+        edge_attr = torch.empty((0, 1), dtype=torch.float)
+        return edge_index, edge_attr, n
+
     edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
-    # Make undirected and unique
+    edge_attr = torch.tensor(edge_weights, dtype=torch.float).view(-1, 1)
+
+    #Make undirected (duplicate edges AND weights)
     edge_index = torch.cat([edge_index, edge_index.flip(0)], dim=1)
-    edge_index = torch.unique(edge_index, dim=1)
+    edge_attr = torch.cat([edge_attr, edge_attr], dim=0)
+
+    # edge_index_rev = edge_index.flip(0)
+    # edge_attr_rev = edge_attr.clone()
+
+    # edge_index = torch.cat([edge_index, edge_index_rev], dim=1)
+    # edge_attr = torch.cat([edge_attr, edge_attr_rev], dim=0)
+
+    # ❗ Remove duplicates consistently
+    # Combine index + weight for uniqueness
+    # combined = torch.cat([edge_index, edge_attr.t()], dim=0)  # [3, E]
+    # combined = torch.unique(combined, dim=1)
+
+    # edge_index = combined[:2]
+    # edge_attr = combined[2:].t()
+
+    return edge_index, edge_attr, n
+
+# def build_knn_similarity_graph_faiss(embeddings, k=10, threshold=0.6):
+#     """
+#     Use Faiss (cosine similarity -> inner product on L2-normalized vectors).
+#     Much faster and memory-friendly for large N.
+#     """
+#     emb = np.ascontiguousarray(embeddings, dtype=np.float32)
+#     # L2-normalize so inner product = cosine similarity
+#     emb = emb / np.linalg.norm(emb, axis=1, keepdims=True)
+#     n = emb.shape[0]
     
-    return edge_index, n
+#     # Build index
+#     index = faiss.IndexFlatIP(emb.shape[1])   # inner product
+#     index.add(emb)
+    
+#     # Search for k+1 neighbours (the first hit will be the point itself)
+#     similarities, indices = index.search(emb, k + 1)
+    
+#     edge_list = []
+#     for i in range(n):
+#         for j_idx, sim in zip(indices[i, 1:], similarities[i, 1:]):  # skip self
+#             if sim >= threshold:
+#                 edge_list.append([i, j_idx])
+    
+#     edge_index = torch.tensor(edge_list, dtype=torch.long).t().contiguous()
+#     # Make undirected and unique
+#     edge_index = torch.cat([edge_index, edge_index.flip(0)], dim=1)
+#     edge_index = torch.unique(edge_index, dim=1)
+    
+#     return edge_index, n
+

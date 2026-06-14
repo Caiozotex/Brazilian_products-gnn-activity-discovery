@@ -41,16 +41,63 @@ def test_knn_graph_faiss():
 
 def test_knn_graph_faiss_large():
     print("Testing Faiss with 5000 random embeddings ...")
+    
     t0 = time.time()
+    
     emb = np.random.rand(5000, 128).astype(np.float32)
-    edge_index, N = build_knn_similarity_graph_faiss(emb, k=10, threshold=0.6)
+    
+    edge_index, edge_attr, N = build_knn_similarity_graph_faiss(
+        emb, k=10, threshold=0.6
+    )
+    
     t1 = time.time()
+
     print(f"[Faiss Large] Nodes: {N}")
     print(f"[Faiss Large] Edge index shape: {edge_index.shape}")
+    print(f"[Faiss Large] Edge attr shape: {edge_attr.shape}")
     print(f"[Faiss Large] Time: {t1 - t0:.2f} seconds")
+
+    # -------------------------------------------------------
+    # Basic checks
+    # -------------------------------------------------------
     assert N == 5000
     assert edge_index.shape[0] == 2
+    assert edge_attr.shape[0] == edge_index.shape[1]  # alignment
+    assert edge_attr.shape[1] == 1
+
+    # -------------------------------------------------------
+    # Value checks
+    # -------------------------------------------------------
+    assert torch.all(edge_attr >= 0.0)
+    assert torch.all(edge_attr <= 1.0)
+
+    # -------------------------------------------------------
+    # No self-loops (important sanity check)
+    # -------------------------------------------------------
+    assert not torch.any(edge_index[0] == edge_index[1])
+
+    # -------------------------------------------------------
+    # Symmetry check (undirected graph)
+    # For every (i, j), (j, i) must exist
+    # -------------------------------------------------------
+    edges = set((i.item(), j.item()) for i, j in edge_index.t())
+    for (i, j) in list(edges)[:1000]:  # sample to keep test fast
+        assert (j, i) in edges
+
     print("✓ Faiss large k-NN test passed!\n")
+
+# def test_knn_graph_faiss_large():
+#     print("Testing Faiss with 5000 random embeddings ...")
+#     t0 = time.time()
+#     emb = np.random.rand(5000, 128).astype(np.float32)
+#     edge_index, N = build_knn_similarity_graph_faiss(emb, k=10, threshold=0.6)
+#     t1 = time.time()
+#     print(f"[Faiss Large] Nodes: {N}")
+#     print(f"[Faiss Large] Edge index shape: {edge_index.shape}")
+#     print(f"[Faiss Large] Time: {t1 - t0:.2f} seconds")
+#     assert N == 5000
+#     assert edge_index.shape[0] == 2
+#     print("✓ Faiss large k-NN test passed!\n")
 
 
 if __name__ == "__main__":

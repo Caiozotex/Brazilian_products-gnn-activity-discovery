@@ -1,0 +1,11 @@
+Metric,Value
+Nodes,41274.0
+Edges,825432.0
+Known HIV active,1443.0
+Known HIV inactive,39684.0
+Unlabeled compounds,147.0
+Edge homophily,0.9525622725486755
+Predicted active (>0.5),33.0
+Mean propagation score,0.18039236962795258
+Median propagation score,0.0
+Maximum propagation score,0.9095698595046997

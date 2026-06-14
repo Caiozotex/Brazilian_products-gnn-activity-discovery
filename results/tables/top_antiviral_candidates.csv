@@ -1,0 +1,31 @@
+rank,node_id,brnpdb_id,common_name,hiv_activity_score
+1,41176,5797,"9,12-Octadecadienoic acid, (9E,12E)-",0.90956986
+2,41204,7150,"9,12-Octadecadienoic acid (9Z,12Z)-",0.90956986
+3,41162,3895,(E)-3-(4-Hydroxyphenyl)acrylic acid,0.8861693
+4,41215,7374,"L-Mannose, 6-deoxy-",0.87925464
+5,41210,7287,"L-Galactose, 6-deoxy-",0.87925464
+6,41233,8239,"9,12-Octadecadienoic acid",0.872014
+7,41259,9477,"Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfate)",0.84533393
+8,41209,7267,"β-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deoxy-α-L-mannopyranosyl)-, 4-[(2E)-3-(3,4-dihydroxyphenyl)-2-propenoate]",0.8080888
+9,41212,7316,"5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-α,α,3,8-tetramethyl-, (3S,5R,8S)-",0.8075108
+10,41266,9610,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)-",0.79472965
+11,41200,6859,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-",0.7840028
+12,41267,9611,"Cycloocta[1,2-b:5,6-b′]diindole-6,13-dicarboxylic acid, 5,12-dihydro-, 6,13-dimethyl ester",0.7719448
+13,41201,6940,"Olean-12-en-3-ol, (3β)-",0.74247575
+14,41242,8749,"L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-α-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7→23)-disulfide",0.7278219
+15,41171,5488,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β,19α,20β)-",0.72496706
+16,41222,7619,Dodecanedioic acid,0.72154313
+17,41241,8699,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aS,4S,4aR,7S,7aR,7bR)-",0.7143887
+18,41182,6310,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β)-",0.7138629
+19,41227,7858,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aS,7R,7aS,7bS)-",0.6964706
+20,41164,5244,"1H-Cycloprop[e]azulen-7-ol, 1a,2,3,5,6,7,7a,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,7S,7aS,7bR)-",0.6930099
+21,41206,7198,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aR,7R,7aS,7bS)-",0.6826553
+22,41153,2144,myristic acid,0.6743881
+23,41177,5806,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7R,7aS,7bS)-",0.66861296
+24,41226,7807,Amphotericin B,0.641366
+25,41184,6397,"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-",0.61802137
+26,41193,6621,"Urs-12-en-28-oic acid, 3-hydroxy-, (3α)-",0.60298795
+27,41255,9290,"Card-20(22)-enolide, 3-[(2,6-dideoxy-4-O-β-D-glucopyranosyl-β-D-ribo-hexopyranosyl)oxy]-14-hydroxy-, (3β,5β)-",0.5888805
+28,41223,7674,Octadecanal,0.5813607
+29,41170,5456,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9S)-",0.5609905
+30,41165,5308,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4Z,9S)-",0.55990434
