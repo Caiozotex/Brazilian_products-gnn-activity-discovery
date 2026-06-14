@@ -115,9 +115,9 @@ data.common_name
 
 ---
 
-# Workflow
+# Reproducing Results
 
-The complete pipeline consists of the following stages.
+The HIV screening pipeline can be reproduced with the following commands.
 
 ---
 
@@ -140,7 +140,7 @@ Metrics:
 - F1-score
 
 
-# Step 3 — Label Propagation
+# Step 2 — Label Propagation
 
 Run graph-based label propagation on the similarity graph.
 
@@ -152,7 +152,7 @@ python -m src.train.evaluate_label_prop
 
 ---
 
-# Step 7 — Community Detection (LPA)
+# Step 3 — Community Detection (LPA)
 
 Detect communities in the similarity graph.
 
@@ -164,7 +164,7 @@ python -m src.train.evaluate_lpa
 
 ---
 
-# Step 8 — Consensus Screening
+# Step 4 — Consensus Screening
 
 Combine:
 
@@ -178,6 +178,31 @@ Example:
 python -m src.utils.brnpdb_consensus_screening
 ```
 
+---
+
+## Pipeline Summary
+
+```text
+HIV Dataset
+      │
+      ▼
+Train GINE Encoder
+      │
+      ▼
+Generate Molecular Embeddings
+      │
+      ▼
+Build Similarity Graph
+      │
+      ├──────────────► HIV Classifier Screening
+      │
+      ├──────────────► Label Propagation
+      │
+      └──────────────► Community Detection (LPA)
+                             │
+                             ▼
+                  Consensus Ranking
+```
 
 ---
 
