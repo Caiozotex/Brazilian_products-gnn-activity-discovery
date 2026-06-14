@@ -15,31 +15,31 @@ os.makedirs(DATA_DIR, exist_ok=True)
 # Dataset URLs + final filenames
 # ---------------------------------
 datasets = {
-    "BBBP": {
-        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/BBBP.csv",
-        "filename": "BBBP.csv",
-        "compressed": False
-    },
+    # "BBBP": {
+    #     "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/BBBP.csv",
+    #     "filename": "BBBP.csv",
+    #     "compressed": False
+    # },
     "HIV": {
         "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/HIV.csv",
         "filename": "HIV.csv",
         "compressed": False
-    },
-    "clintox": {
-        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/clintox.csv.gz",
-        "filename": "clintox.csv",
-        "compressed": True
-    },
-    "tox21": {
-        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/tox21.csv.gz",
-        "filename": "tox21.csv",
-        "compressed": True
-    },
-    "muv": {
-        "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/muv.csv.gz",
-        "filename": "muv.csv",
-        "compressed": True
     }
+    # "clintox": {
+    #     "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/clintox.csv.gz",
+    #     "filename": "clintox.csv",
+    #     "compressed": True
+    # },
+    # "tox21": {
+    #     "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/tox21.csv.gz",
+    #     "filename": "tox21.csv",
+    #     "compressed": True
+    # },
+    # "muv": {
+    #     "url": "https://deepchemdata.s3-us-west-1.amazonaws.com/datasets/muv.csv.gz",
+    #     "filename": "muv.csv",
+    #     "compressed": True
+    # }
 }
 
 # ---------------------------------
