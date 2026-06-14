@@ -211,11 +211,11 @@ Build Similarity Graph
 
 | File | Description |
 |--------|--------|
-| brnpdb_hiv_screening.csv | HIV classifier predictions |
-| label_propagation_screening.csv | Label propagation predictions |
-| lpa_community_members.csv | Community assignments |
-| brnpdb_consensus_screening.csv | Combined ranking |
-| hiv_knn_graph.gexf | Graph visualization |
+| results/tables/brnpdb_hiv_screening.csv | HIV classifier predictions |
+| results/tables/label_propagation_screening.csv| Label propagation predictions |
+| results/tables/lpa_community_members.csv | Community assignments |
+| results/tables/brnpdb_consensus_screening.csv | Combined ranking |
+| results/similiarity_graph_hiv/hiv_knn_graph/graph_hiv_communities.gexf | Graph visualization with communities|
 
 ---
 
