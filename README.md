@@ -59,7 +59,7 @@ cd Brazilian_products-gnn-activity-discovery
 
 ---
 
-## 2. Create Conda Environment
+## 2. Create Conda Environment (Recommended)
 
 ```bash
 conda env create -f environment.yml
@@ -76,6 +76,9 @@ Verify installation:
 ```bash
 python --version
 ```
+
+# OR pip
+pip install -r requirements.txt
 
 ---
 
