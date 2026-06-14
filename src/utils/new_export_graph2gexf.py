@@ -31,6 +31,7 @@ def main():
     edge_attr = data.edge_attr if hasattr(data, "edge_attr") else None
     brnpdb_ids = data.brnpdb_id if hasattr(data, "brnpdb_id") else None
     common_names = data.common_name if hasattr(data, "common_name") else None
+    communities = data.community if hasattr(data, "community") else None
 
     # -------------------------------------------------------
     # 2. Create NetworkX graph
@@ -67,11 +68,18 @@ def main():
         node_name = f"{dataset_label}_{i}"
 
         node_attrs = {
+            "node_id": int(i),
             "dataset": dataset_label,
             "hiv_active": hiv_val,
             "label_type": label_type,
-            "name": node_name
+            "name": node_name,
+                
         }
+
+        if communities is not None:
+            node_attrs["community"] = int(
+                communities[i]
+            )
 
         # ---------------------------------------------------
         # Add BrNPDB metadata for antiviral nodes

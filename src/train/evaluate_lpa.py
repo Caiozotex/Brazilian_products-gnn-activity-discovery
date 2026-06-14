@@ -13,6 +13,42 @@ labels = lpa_weighted(
     num_nodes=data.num_nodes
 )
 
+community_members = []
+
+for node_id in range(data.num_nodes):
+
+    dataset = (
+        "HIV"
+        if data.node_dataset[node_id] == 0
+        else "BrNPDB"
+    )
+
+    community_members.append({
+        "node_id": node_id,
+        "community": int(labels[node_id]),
+
+        "dataset": dataset,
+
+        "hiv_active":
+            float(data.hiv_active[node_id]),
+
+        "brnpdb_id":
+            data.brnpdb_id[node_id]
+            if hasattr(data, "brnpdb_id")
+            else -1,
+
+        "common_name":
+            data.common_name[node_id]
+            if hasattr(data, "common_name")
+            else ""
+    })
+
+community_members_df = pd.DataFrame(
+    community_members
+)
+
+
+
 community_summary(labels)
 
 df = community_enrichment(
@@ -38,6 +74,21 @@ df_filtered = df[
 print("\nTop meaningful communities:")
 print(df_filtered.sort_values(by="enrichment", ascending=False).head(10))
 
+brnpdb_communities = community_members_df[
+    community_members_df["dataset"] == "BrNPDB"
+]
+
+
+community_compounds = (
+    brnpdb_communities
+    .groupby("community")
+    .agg({
+        "brnpdb_id": list,
+        "common_name": list
+    })
+    .reset_index()
+)
+
 #--------------------------------------------------------------------------
 # Save all results
 
@@ -62,6 +113,30 @@ df_filtered.to_csv(
     os.path.join(
         OUTPUT_DIR,
         "lpa_communities_filtered.csv"
+    ),
+    index=False
+)
+
+community_members_df.to_csv(
+    os.path.join(
+        OUTPUT_DIR,
+        "lpa_community_members.csv"
+    ),
+    index=False
+)
+
+brnpdb_communities.to_csv(
+    os.path.join(
+        OUTPUT_DIR,
+        "lpa_brnpdb_compounds.csv"
+    ),
+    index=False
+)
+
+community_compounds.to_csv(
+    os.path.join(
+        OUTPUT_DIR,
+        "lpa_community_compounds.csv"
     ),
     index=False
 )
