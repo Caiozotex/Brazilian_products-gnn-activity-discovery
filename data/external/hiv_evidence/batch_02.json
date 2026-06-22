@@ -1,0 +1,112 @@
+[
+  {
+    "brnpdb_id": 9610,
+    "common_name": "Terpinolene",
+    "has_hiv_evidence": false,
+    "evidence_type": "none",
+    "scope": "compound_class",
+    "key_paper_title": null,
+    "key_paper_year": null,
+    "key_paper_doi": null,
+    "notes": "No peer-reviewed paper found demonstrating HIV antiviral activity for terpinolene specifically. Terpinolene has documented antiviral activity against influenza A (H1N1), HSV-1, HSV-2, Echovirus 9, Poliovirus 1, and Coxsackievirus B1, but no HIV-1/HIV-2 data was found. The broader monoterpene class shows anti-HSV activity; triterpenes (a distinct class) have anti-HIV data. Classification as 'none' at the exact-compound level and no credible HIV-specific paper for this monoterpene was found."
+  },
+  {
+    "brnpdb_id": 6859,
+    "common_name": "Terpinolene (rel-stereoisomer)",
+    "has_hiv_evidence": false,
+    "evidence_type": "none",
+    "scope": "compound_class",
+    "key_paper_title": null,
+    "key_paper_year": null,
+    "key_paper_doi": null,
+    "notes": "Same compound as brnpdb_id=9610 with (1R,2R,4S)-rel- stereochemistry. No peer-reviewed paper found for HIV antiviral activity of this specific stereoisomer or terpinolene in general. Same reasoning applies: monoterpene antiviral data exists for HSV/influenza but not HIV."
+  },
+  {
+    "brnpdb_id": 7287,
+    "common_name": "L-Fucose (6-deoxy-L-galactose)",
+    "has_hiv_evidence": false,
+    "evidence_type": "indirect",
+    "scope": "structural_analog",
+    "key_paper_title": "Fucoidans as Potential Inhibitors of HIV-1",
+    "key_paper_year": 2013,
+    "key_paper_doi": "10.3390/md11083000",
+    "notes": "L-Fucose as a free monosaccharide has no direct peer-reviewed evidence of HIV-1 inhibition. The HIV-relevant literature concerns fucoidans — sulfated polysaccharides whose repeating unit is alpha-L-fucose — which inhibit HIV-1 entry at 0.001-0.05 microg/mL (Bilan et al., Mar Drugs 2013). The free sugar L-fucose itself is not antiviral; its role in glycan biology affects antibody Fc effector function rather than directly blocking viral replication. Evidence is indirect at best, attributed to the polysaccharide scaffold, not the monosaccharide."
+  },
+  {
+    "brnpdb_id": 7374,
+    "common_name": "L-Rhamnose (6-deoxy-L-mannose)",
+    "has_hiv_evidence": false,
+    "evidence_type": "indirect",
+    "scope": "structural_analog",
+    "key_paper_title": "Levo-monosaccharide in a nucleoside analog for use as an anti-retroviral agent",
+    "key_paper_year": 2000,
+    "key_paper_doi": null,
+    "notes": "L-Rhamnose as a free monosaccharide has no peer-reviewed in vitro HIV-1 inhibition data. A US patent (6090602) describes it as the sugar moiety of a nucleoside analog antiretroviral, where steric hindrance inhibits reverse transcription — but this is an analog, not the free sugar. Separately, the rhamnoside-bearing flavonoid myricetin 3-(6-rhamnosylgalactoside) shows EC50 ~45 microM anti-HIV-1 activity, attributable to the flavonoid scaffold. No credible peer-reviewed paper reports anti-HIV activity for free L-rhamnose itself."
+  },
+  {
+    "brnpdb_id": 5488,
+    "common_name": "19alpha-Hydroxy ursolic acid (Urs-12-en-28-oic acid, 3,19-dihydroxy-, 3beta,19alpha,20beta)",
+    "has_hiv_evidence": true,
+    "evidence_type": "in-vitro",
+    "scope": "structural_analog",
+    "key_paper_title": "Anti-AIDS Agents 38. Anti-HIV Activity of 3-O-Acyl Ursolic Acid Derivatives",
+    "key_paper_year": 2000,
+    "key_paper_doi": "10.1021/np990633v",
+    "notes": "The exact compound (19alpha-OH ursolic acid) was studied as part of the ursolic acid derivative series. Structural modifications at positions 2, 3, 19 and 27 of ursolic acid were evaluated for anti-HIV activity (Kashiwada et al., J Nat Prod 2000). The parent ursolic acid inhibits HIV-1 protease with IC50 ~8.0 microM and shows EC50 = 4.4 microM for viral replication. The 19-position hydroxylation is known to influence HIV-1 protease inhibitory activity. A US patent (5916919) specifically includes 2alpha,19alpha-dihydroxy-3-oxo-12-ursen-28-oic acid as an HIV retroviral protease inhibitor. Evidence is strong for the compound class; direct data on the exact 19alpha,3beta stereoisomer from Brazilian products is inferred from the ursolic acid derivative literature."
+  },
+  {
+    "brnpdb_id": 7619,
+    "common_name": "Dodecanedioic acid",
+    "has_hiv_evidence": false,
+    "evidence_type": "indirect",
+    "scope": "structural_analog",
+    "key_paper_title": "Synthesis and Biological Evaluation of 5-O-Dicarboxylic Fatty Acyl Monoester Derivatives of Anti-HIV Nucleoside Reverse Transcriptase Inhibitors",
+    "key_paper_year": 2014,
+    "key_paper_doi": "10.1021/jm401782t",
+    "notes": "Dodecanedioic acid itself shows no direct anti-HIV activity in the literature. It was used as a linker/conjugate moiety to improve lipophilicity and cellular uptake of HIV nucleoside analogs (d4T, FLT), where dodecanedioate ester of d4T showed 5x higher anti-HIV activity than the parent nucleoside. The anti-HIV effect belongs to the nucleoside pharmacophore, not to dodecanedioic acid itself. No peer-reviewed paper reports direct antiviral activity for the free diacid."
+  },
+  {
+    "brnpdb_id": 6310,
+    "common_name": "Ursolic acid",
+    "has_hiv_evidence": true,
+    "evidence_type": "in-vitro",
+    "scope": "exact_compound",
+    "key_paper_title": "Anti-AIDS Agents 38. Anti-HIV Activity of 3-O-Acyl Ursolic Acid Derivatives",
+    "key_paper_year": 2000,
+    "key_paper_doi": "10.1021/np990633v",
+    "notes": "Ursolic acid (3beta-hydroxy, no 19-OH) is one of the most studied natural pentacyclic triterpenes for HIV. Multiple peer-reviewed papers confirm: (1) HIV-1 protease inhibition with IC50 = 8.0 microM and EC50 = 4.4 microM for HIV-1 replication in cell-based assay (Kashiwada et al., J Nat Prod 2000); (2) ursolic acid and uvaol inhibit HIV-1 protease with IC50 values of 8.0 and 5.5 microM respectively; (3) review in PMC6332387 (Molecules 2019) summarises multiple studies. The 3-oxo derivative shows EC50 = 0.11 microg/mL. Evidence for the exact compound is robust."
+  },
+  {
+    "brnpdb_id": 3471,
+    "common_name": "Caffeic acid",
+    "has_hiv_evidence": true,
+    "evidence_type": "in-vitro",
+    "scope": "exact_compound",
+    "key_paper_title": "Anti-HIV activities of natural antioxidant caffeic acid derivatives: toward an antiviral supplementation diet",
+    "key_paper_year": 2005,
+    "key_paper_doi": "10.2174/0929867054367239",
+    "notes": "Caffeic acid (3,4-dihydroxycinnamic acid) itself has documented HIV-1 integrase inhibitory activity. Caffeic acid phenethyl ester (CAPE) is one of the first reported HIV-1 integrase inhibitors. The free acid caffeic acid shows weaker but measurable activity; dicaffeoylquinic and dicaffeoyltartaric acids inhibit HIV-1 integrase at 150-840 nM and HIV replication at 2-12 microM (Pommier et al., Antimicrob Agents Chemother 1998, DOI 10.1128/aac.42.1.140). A 2005 review (Curr Med Chem, DOI 10.2174/0929867054367239) discusses caffeic acid and its derivatives as natural antioxidant HIV inhibitors. The catechol pharmacophore of caffeic acid is the essential chelating motif for integrase inhibition. Evidence for the exact compound is supported though derivatives are more potent."
+  },
+  {
+    "brnpdb_id": 6940,
+    "common_name": "alpha-Amyrin (Olean-12-en-3-ol, 3beta)",
+    "has_hiv_evidence": true,
+    "evidence_type": "in-vitro",
+    "scope": "exact_compound",
+    "key_paper_title": "Inhibitory potential of alpha-amyrin from Calotropis procera against HIV-1 reverse transcriptase: insights from in silico and in vitro assays",
+    "key_paper_year": 2025,
+    "key_paper_doi": "10.1007/s40203-025-00498-z",
+    "notes": "alpha-Amyrin (Olean-12-en-3beta-ol) from Calotropis procera was tested directly against HIV-1 reverse transcriptase in vitro: 82% inhibition at maximum concentration, IC50 = 26 microg/mL, compared to nevirapine (92% inhibition, IC50 = 21 microg/mL). Molecular docking showed binding energy of -7.33 kcal/mol to HIV-1 RT with two hydrogen bonds at key enzyme sites (In Silico Pharmacol, 2025). Earlier literature also reports alpha- and beta-amyrins inhibiting HIV replication with IC50 ~1.4 microg/mL and HIV-1 protease inhibitory activity from plant extracts. Evidence is direct in-vitro for the exact compound."
+  },
+  {
+    "brnpdb_id": 2144,
+    "common_name": "Myristic acid (tetradecanoic acid)",
+    "has_hiv_evidence": false,
+    "evidence_type": "indirect",
+    "scope": "structural_analog",
+    "key_paper_title": "In vitro antiviral activities of myristic acid analogs against human immunodeficiency and hepatitis B viruses",
+    "key_paper_year": 1997,
+    "key_paper_doi": "10.1016/s0166-3542(96)01022-4",
+    "notes": "Myristic acid itself (the saturated C14 fatty acid) is required by HIV-1 for N-myristoylation of the Gag polyprotein precursor — it is a substrate, not an inhibitor. Anti-HIV literature focuses on myristic acid ANALOGS (heteroatom substitutions: O, S replacing CH2) that inhibit N-myristoyltransferase (NMT). The most active analog, 12-thioethyldodecanoic acid, showed EC50 = 9.37 microM against HIV-1 (Devadas et al., Antiviral Res 1997). The free myristic acid competes at NMT but does not inhibit it; no peer-reviewed paper reports direct anti-HIV activity for unmodified myristic acid (tetradecanoic acid) itself."
+  }
+]

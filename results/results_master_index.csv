@@ -1,0 +1,40 @@
+caminho,categoria,descricao
+results/tables/brnpdb_hiv_predictions.csv,Predição Final,MEHAC: score final por composto = 0.35·S1(mlp) + 0.30·S2(lp) + 0.25·S3(knn_hiv_frac) + 0.10·S4(struct). 18 compostos preditos ATIVOS de 147
+results/tables/brnpdb_hiv_predictions_report.txt,Predição Final,Relatório textual do MEHAC com detalhamento de cada sinal por composto e lista de borderline (score 0.25-0.35)
+results/tables/community_hiv_predictions.csv,Predição Final,Predição baseada exclusivamente em grafo: enriquecimento HIV da comunidade Louvain + distância BFS ao ativo mais próximo. 9 compostos ATIVOS.
+results/tables/graph_analysis_report.txt,Análise de Grafo,Relatório completo do grafo k-NN: estatísticas (grau; componentes; ciclomático), top-10 hubs, Louvain (27 comunidades; Q=0.892), distâncias BFS
+results/tables/louvain_node_communities.csv,Análise de Grafo,Mapeamento completo de todos os 41.274 nós → comunidade Louvain (no grafo k-NN original); inclui flags is_brnpdb e is_active
+results/tables/community_chemical_profiles.csv,Análise de Comunidade,Perfil químico das 27 comunidades: descriptors RDKit (MW; LogP; TPSA; HBD/HBA; anéis); prevalência e enriquecimento relativo de 35 grupos funcionais; família química atribuída
+results/tables/community_chemical_report.txt,Análise de Comunidade,Relatório legível dos perfis químicos com deltas vs. média global; grupos enriquecidos/depletados; compostos BrNPDB membros de cada comunidade
+results/tables/community_chemical_families.csv,Análise de Comunidade,Família química nomeada para cada uma das 27 comunidades Louvain: nome baseado nos compostos BrNPDB reais (ex: fitoesterois; macrolida polienica; monoterpenos); taxa de enriquecimento HIV; explicação da nomenclatura
+src/analysis/label_communities.py,Script,Gera community_chemical_families.csv: nomeia as 27 comunidades com base na inspeção manual dos nomes BrNPDB + deltas de descritores RDKit + enriquecimento relativo de grupos funcionais
+results/gnnexplainer/brnpdb_explanations.csv,GNNExplainer,Por composto BrNPDB: hiv_prob (logit sigmoid do HIVModel); tier; índices e símbolos dos top-10 átomos mais importantes pelo GNNExplainer; fragmento SMILES da subestrutura explicativa
+results/gnnexplainer/high_score_summary.txt,GNNExplainer,Relatório textual dos 15 compostos HIGH (consensus >= 0.5): nome; comunidade; prob HIV; átomos e fragmento SMILES
+results/gnnexplainer/low_score_summary.txt,GNNExplainer,Relatório textual dos 94 compostos LOW (consensus < 0.3); ordenados do pior para o melhor score
+results/gnnexplainer/brnpdb_structural_features.csv,Padrões Estruturais,Por composto: scaffold de Bemis-Murcko (SMILES do esqueleto); grupos funcionais (35 SMARTS); sumário de anéis aromáticos vs. alifáticos
+results/gnnexplainer/community_structural_patterns.csv,Padrões Estruturais,Por comunidade (>=2 BrNPDB): MCS em SMARTS (subestrutura máxima comum); grupos funcionais em >50% dos membros; scaffolds compartilhados; consensus médio
+results/gnnexplainer/community_patterns_report.txt,Padrões Estruturais,Versão narrativa legível do CSV acima listando compostos; MCS; grupos recorrentes e scaffolds por comunidade BrNPDB
+results/gnnexplainer/global_functional_group_prevalence.csv,Padrões Estruturais,Tabela de prevalência global: 15 grupos funcionais mais frequentes nos 147 BrNPDB (contagem + % de 147). alkene=55.8%; hydroxyl=44.9%; ether=42.2%
+results/gnnexplainer/images/_grid_high.png,Visualização,Grid 3-colunas dos 15 compostos HIGH: estrutura 2D com top-8 átomos destacados em gradiente vermelho por importância GNNExplainer
+results/gnnexplainer/images/_grid_mid.png,Visualização,Grid 3-colunas dos 35 compostos MID
+results/gnnexplainer/images/_grid_low.png,Visualização,Grid 3-colunas dos 94 compostos LOW
+results/gnnexplainer/images/high/,Visualização,15 PNGs individuais — compostos HIGH com destaque de importância atômica; legenda com scores e grupos funcionais detectados
+results/gnnexplainer/images/mid/,Visualização,35 PNGs individuais — compostos MID
+results/gnnexplainer/images/low/,Visualização,94 PNGs individuais — compostos LOW; destaque mostra fragmentos que o modelo associa à inatividade
+results/gnnexplainer/images/communities/,Visualização,"31 PNGs de grade por comunidade (>=2 BrNPDB); ordenados por consensus desc. Permite comparação visual de estruturas na mesma comunidade"
+results/gnnexplainer/results_index.csv,Índice,Índice parcial (gerado em sessão anterior) dos arquivos GNNExplainer/visualização; substituído por este arquivo mestre
+src/analysis/louvain.py,Script,"Louvain implementado do zero: Phase1 (local moving; ΔQ=k_ic/m − σ_tot·k_i/(2m²)) + Phase2 (compressão em super-nós). Retorna vetor de labels."
+src/analysis/hiv_activity_predictor.py,Script,MEHAC: carrega mlp_score e lp_score; lê GEXF p/ knn_hiv_frac; calcula lift de grupos funcionais (S4). Combina 4 sinais ortogonais em score final.
+src/analysis/graph_community_analysis.py,Script,"Análise do grafo k-NN: grau; componentes; número ciclomático; Louvain (nossa impl.); enriquecimento HIV por comunidade; BFS dist. a ativo mais próximo; predição BrNPDB."
+src/analysis/community_chemical_profiles.py,Script,"Perfil químico das 27 comunidades: descritores RDKit para todos os 41k nós; enriquecimento relativo de 35 grupos funcionais; regras heurísticas de nomenclatura de família química."
+src/analysis/gnnexplainer_brnpdb.py,Script,GNNExplainer nos 147 BrNPDB via HIVModel com ModelWrapper; Explainer task_level=graph; extrai importâncias por átomo; gera CSV e sumários TXT
+src/analysis/community_structural_patterns.py,Script,Mineração estrutural: Murcko scaffold; MCS via rdFMCS.FindMCS (completeRingsOnly); 35 SMARTS; agregação por comunidade BrNPDB
+src/analysis/visualize_explanations.py,Script,Renderização: re-executa GNNExplainer por composto; rdMolDraw2D.MolDraw2DCairo com gradiente vermelho nos top-8 átomos; grids por tier e comunidade via PIL
+src/analysis/post_graphcl_analysis.py,Script (histórico),Pós-análise GraphCL: embeddings híbridos; construção de grafo; Louvain no grafo GraphCL (14.130 comunidades; Q=0.9877); relatório de comunidade
+src/analysis/gnn_similarity_sweep.py,Script (histórico),"Varredura de similaridade: cosseno centrado; Tanimoto; híbrido (α=0.2) nos embeddings GNN. Resultado: α=0.2 threshold=0.84 → 413.886 arestas; 7.937 componentes."
+results/similiarity_graph_hiv/hiv_knn_graph.gexf,Grafo Base,"Grafo k-NN do projeto: 41.275 nós (41.128 HIV + 147 BrNPDB); 280.855 arestas; 1 componente gigante; similaridade híbrida 0.2·Tanimoto + 0.8·CossCtd. Base de toda análise de grafo."
+results/tables/brnpdb_micro_communities.csv,Análise de Comunidade,Posicionamento dos 147 BrNPDB no nível de micro-comunidade (2.550): taxa HIV local; tamanho; macro-comunidade de pertencimento
+results/tables/hot_micro_communities.csv,Análise de Comunidade,48 micro-comunidades HOT (>50% HIV-ativo; size>=5): 43 pertencem à macro C11; distribuição por macro-comunidade
+results/tables/intermediate_community_report.txt,Análise de Comunidade,Relatório da estrutura hierárquica Louvain: 2.550 micro -> 27 macro; heterogeneidade interna da C11; isolamento topológico da hot zone; posicionamento BrNPDB
+src/analysis/intermediate_community_analysis.py,Script,Análise dos grafos intermediários: meta-grafo 2.550 comunidades; mapeamento micro->macro; hot zones; conectividade inter-comunidade; posicionamento BrNPDB
+results/tables/brnpdb_consensus_screening.csv,Dados,Triagem dos 147 BrNPDB: mlp_score (GNN direto); lp_score (label propagation); consensus_score (ranking combinado); community (do Louvain GraphCL)

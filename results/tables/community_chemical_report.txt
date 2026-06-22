@@ -1,0 +1,349 @@
+Chemical Profiles of Louvain Communities — hiv_knn_graph
+===========================================================================
+
+Total communities  : 27
+Global HIV-active rate: 3.51%
+
+Community  11  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,485 nodes  (1484 HIV + 1 BrNPDB)
+  HIV active : 678  (45.7%,  13.0x global rate)
+  MW         : 381 ± 175 Da
+  LogP       : 3.27 ± 2.73
+  TPSA       : 81 ± 56 A^2
+  HBD / HBA  : 1.4 / 4.9
+  Rings      : 3.2 total  (2.1 aromatic)
+  Top enriched: thioether(1.3x,12%); halide_F(1.3x,7%)
+  Depleted    : 
+  BrNPDB      : Amphotericin B [7807]
+  dMW=+11  dLogP=+0.29  dRings=+0.10  dHBD=-0.14  dTPSA=-1
+
+Community  17  [Enriched in alkyne (x2.1)]
+  Size       : 668 nodes  (661 HIV + 7 BrNPDB)
+  HIV active : 53  (8.0%,  2.3x global rate)
+  MW         : 372 ± 179 Da
+  LogP       : 3.08 ± 2.69
+  TPSA       : 82 ± 60 A^2
+  HBD / HBA  : 1.5 / 5.0
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: alkyne(2.1x,2%)
+  Depleted    : 
+  BrNPDB      : Ergostane-2,3,6-triol, 25-me [9477] | 2-Propenoic acid, 3-[4-hydro [6662] | Stigmast-5-en-3-ol, (3β,24ξ) [7884] | Stigmast-5-en-3-ol, (3β)- [7333] | Stigmast-5-en-3-ol [7233]
+  dMW=+3  dLogP=+0.10  dRings=-0.00  dHBD=-0.01  dTPSA=-0
+
+Community  16  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,166 nodes  (1165 HIV + 1 BrNPDB)
+  HIV active : 87  (7.5%,  2.1x global rate)
+  MW         : 363 ± 148 Da
+  LogP       : 2.86 ± 2.33
+  TPSA       : 83 ± 53 A^2
+  HBD / HBA  : 1.6 / 4.9
+  Rings      : 2.9 total  (1.9 aromatic)
+  Top enriched: aldehyde(1.4x,1%); sulfonate(1.4x,3%)
+  Depleted    : 
+  BrNPDB      : caffeic acid [3471]
+  dMW=-7  dLogP=-0.12  dRings=-0.19  dHBD=+0.02  dTPSA=+1
+
+Community   5  [Enriched in sulfate_ester (x2.6)]
+  Size       : 502 nodes  (502 HIV + 0 BrNPDB)
+  HIV active : 36  (7.2%,  2.0x global rate)
+  MW         : 382 ± 185 Da
+  LogP       : 2.81 ± 2.94
+  TPSA       : 87 ± 66 A^2
+  HBD / HBA  : 1.7 / 5.2
+  Rings      : 3.2 total  (1.9 aromatic)
+  Top enriched: pyranose_sugar(1.7x,1%); hydroxyl(1.5x,19%); furan(1.4x,3%); sulfonate(1.3x,3%)
+  Depleted    : 
+  dMW=+12  dLogP=-0.17  dRings=+0.13  dHBD=+0.19  dTPSA=+5
+
+Community  24  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 2,137 nodes  (2136 HIV + 1 BrNPDB)
+  HIV active : 82  (3.8%,  1.1x global rate)
+  MW         : 366 ± 171 Da
+  LogP       : 2.94 ± 2.72
+  TPSA       : 83 ± 58 A^2
+  HBD / HBA  : 1.6 / 4.9
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: aldehyde(1.4x,1%); furan(1.3x,2%)
+  Depleted    : 
+  BrNPDB      : Cycloocta[1,2-b:5,6-b′]diind [9611]
+  dMW=-3  dLogP=-0.04  dRings=+0.00  dHBD=+0.04  dTPSA=+0
+
+Community   9  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,241 nodes  (1239 HIV + 2 BrNPDB)
+  HIV active : 37  (3.0%,  0.8x global rate)
+  MW         : 366 ± 170 Da
+  LogP       : 2.99 ± 2.44
+  TPSA       : 81 ± 59 A^2
+  HBD / HBA  : 1.4 / 4.8
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: halide_F(1.3x,7%)
+  Depleted    : 
+  BrNPDB      : Quercetin [122] | 3-O-methylquercetin [1223]
+  dMW=-4  dLogP=+0.01  dRings=+0.00  dHBD=-0.09  dTPSA=-2
+
+Community   2  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,982 nodes  (1947 HIV + 35 BrNPDB)
+  HIV active : 55  (2.8%,  0.8x global rate)
+  MW         : 372 ± 173 Da
+  LogP       : 3.02 ± 2.57
+  TPSA       : 82 ± 64 A^2
+  HBD / HBA  : 1.6 / 5.0
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: pyranose_sugar(1.4x,1%); thiophene(1.3x,3%)
+  Depleted    : 
+  BrNPDB      : Urs-12-en-28-oic acid, 3-hyd [6310] | myristic acid [2144] | Urs-12-en-28-oic acid, 3-hyd [5488] | 9,12-Octadecadienoic acid, ( [5797] | L-Cysteine, L-tyrosylglycyl- [8749]
+  dMW=+3  dLogP=+0.04  dRings=+0.03  dHBD=+0.02  dTPSA=-0
+
+Community   6  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,481 nodes  (1460 HIV + 21 BrNPDB)
+  HIV active : 31  (2.1%,  0.6x global rate)
+  MW         : 379 ± 231 Da
+  LogP       : 3.03 ± 2.74
+  TPSA       : 85 ± 88 A^2
+  HBD / HBA  : 1.6 / 5.0
+  Rings      : 3.3 total  (2.1 aromatic)
+  Top enriched: pyranose_sugar(1.3x,1%)
+  Depleted    : 
+  BrNPDB      : 1H-Cycloprop[e]azulen-4-ol,  [7198] | 1H-Cycloprop[e]azulen-7-ol,  [5244] | 1H-Cyclopenta[1,3]cyclopropa [6397] | Card-20(22)-enolide, 3-[(2,6 [9290] | 1H-Cycloprop[e]azulen-4-ol,  [5806]
+  dMW=+9  dLogP=+0.05  dRings=+0.20  dHBD=+0.09  dTPSA=+3
+
+Community   7  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,776 nodes  (1775 HIV + 1 BrNPDB)
+  HIV active : 38  (2.1%,  0.6x global rate)
+  MW         : 366 ± 158 Da
+  LogP       : 2.86 ± 2.38
+  TPSA       : 83 ± 60 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: imidazole(1.3x,7%)
+  Depleted    : 
+  BrNPDB      : Kaempferide [3892]
+  dMW=-3  dLogP=-0.12  dRings=-0.04  dHBD=-0.01  dTPSA=-0
+
+Community   3  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,158 nodes  (1145 HIV + 13 BrNPDB)
+  HIV active : 24  (2.1%,  0.6x global rate)
+  MW         : 373 ± 176 Da
+  LogP       : 2.99 ± 2.81
+  TPSA       : 83 ± 62 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.1 total  (2.1 aromatic)
+  Top enriched: pyranose_sugar(1.5x,1%)
+  Depleted    : 
+  BrNPDB      : 4H-1-Benzopyran-4-one, 2-(3, [10222] | 4-nerolidylcathecol [3887] | 1-Naphthalenepropanoic acid, [6665] | Myrcene [1747] | 1-Naphthalenepropanoic acid, [6009]
+  dMW=+3  dLogP=+0.01  dRings=+0.06  dHBD=+0.01  dTPSA=-0
+
+Community   4  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 2,289 nodes  (2281 HIV + 8 BrNPDB)
+  HIV active : 43  (1.9%,  0.5x global rate)
+  MW         : 371 ± 183 Da
+  LogP       : 2.97 ± 2.75
+  TPSA       : 83 ± 73 A^2
+  HBD / HBA  : 1.5 / 5.0
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  BrNPDB      : β-D-Glucopyranoside, 2-(3,4- [7267] | 4H-1-Benzopyran-4-one, 3-(β- [5243] | 4H-1-Benzopyran-4-one, 3-[(6 [7187] | β-D-Glucopyranoside, 4-[[[(2 [9109] | 4H-1-Benzopyran-4-one, 2-(3, [7515]
+  dMW=+2  dLogP=-0.01  dRings=+0.01  dHBD=-0.02  dTPSA=+0
+
+Community  13  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,325 nodes  (1316 HIV + 9 BrNPDB)
+  HIV active : 25  (1.9%,  0.5x global rate)
+  MW         : 366 ± 170 Da
+  LogP       : 2.90 ± 2.45
+  TPSA       : 83 ± 62 A^2
+  HBD / HBA  : 1.6 / 4.9
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: aldehyde(1.8x,1%); pyranose_sugar(1.4x,1%)
+  Depleted    : 
+  BrNPDB      : D-Ribose [9464] | Arabinose [6231] | L-Arabinose [8910] | D-Arabinose [8304] | D-Xylose [9971]
+  dMW=-3  dLogP=-0.08  dRings=-0.00  dHBD=+0.02  dTPSA=+0
+
+Community  19  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 866 nodes  (866 HIV + 0 BrNPDB)
+  HIV active : 16  (1.8%,  0.5x global rate)
+  MW         : 369 ± 165 Da
+  LogP       : 2.99 ± 2.61
+  TPSA       : 83 ± 66 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.0 total  (2.1 aromatic)
+  Top enriched: aldehyde(1.6x,1%)
+  Depleted    : 
+  dMW=-1  dLogP=+0.01  dRings=-0.04  dHBD=+0.01  dTPSA=+1
+
+Community  12  [Indole / pyrrole alkaloids]
+  Size       : 297 nodes  (290 HIV + 7 BrNPDB)
+  HIV active : 5  (1.7%,  0.5x global rate)
+  MW         : 375 ± 222 Da
+  LogP       : 2.99 ± 2.62
+  TPSA       : 83 ± 94 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: pyrrole(2.1x,6%); indole(1.9x,4%); epoxide(1.6x,1%); imidazole(1.3x,7%)
+  Depleted    : 
+  BrNPDB      : L-Galactose, 6-deoxy- [7287] | L-Mannose, 6-deoxy- [7374] | D-Glucose [8971] | D-Galactose [9018] | D-Mannose [8123]
+  dMW=+5  dLogP=+0.01  dRings=-0.04  dHBD=-0.04  dTPSA=+0
+
+Community  20  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 2,207 nodes  (2206 HIV + 1 BrNPDB)
+  HIV active : 33  (1.5%,  0.4x global rate)
+  MW         : 369 ± 169 Da
+  LogP       : 2.84 ± 2.50
+  TPSA       : 84 ± 62 A^2
+  HBD / HBA  : 1.6 / 4.9
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  BrNPDB      : 4H-1-Benzopyran-4-one, 6-β-D [6523]
+  dMW=-1  dLogP=-0.14  dRings=+0.01  dHBD=+0.06  dTPSA=+2
+
+Community   8  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,813 nodes  (1812 HIV + 1 BrNPDB)
+  HIV active : 23  (1.3%,  0.4x global rate)
+  MW         : 366 ± 158 Da
+  LogP       : 2.93 ± 2.50
+  TPSA       : 82 ± 57 A^2
+  HBD / HBA  : 1.6 / 5.0
+  Rings      : 3.0 total  (1.9 aromatic)
+  Top enriched: 
+  Depleted    : 
+  BrNPDB      : ω-fenil alcanoic acid [949]
+  dMW=-4  dLogP=-0.05  dRings=-0.06  dHBD=+0.03  dTPSA=-0
+
+Community  15  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 2,878 nodes  (2876 HIV + 2 BrNPDB)
+  HIV active : 35  (1.2%,  0.3x global rate)
+  MW         : 367 ± 168 Da
+  LogP       : 3.06 ± 2.54
+  TPSA       : 80 ± 56 A^2
+  HBD / HBA  : 1.4 / 4.9
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: alkyne(1.4x,1%); thiophene(1.3x,3%)
+  Depleted    : 
+  BrNPDB      : (E)-3-(4-Hydroxyphenyl)acryl [3895] | Benzyl benzoate [1828]
+  dMW=-3  dLogP=+0.08  dRings=-0.08  dHBD=-0.09  dTPSA=-3
+
+Community  21  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,740 nodes  (1739 HIV + 1 BrNPDB)
+  HIV active : 20  (1.1%,  0.3x global rate)
+  MW         : 374 ± 192 Da
+  LogP       : 2.98 ± 2.59
+  TPSA       : 85 ± 69 A^2
+  HBD / HBA  : 1.6 / 5.0
+  Rings      : 3.1 total  (2.1 aromatic)
+  Top enriched: thiophene(1.3x,3%)
+  Depleted    : 
+  BrNPDB      : 4H-1-Benzopyran-4-one, 2,3-d [5919]
+  dMW=+4  dLogP=+0.00  dRings=+0.06  dHBD=+0.02  dTPSA=+2
+
+Community   0  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,639 nodes  (1639 HIV + 0 BrNPDB)
+  HIV active : 18  (1.1%,  0.3x global rate)
+  MW         : 363 ± 152 Da
+  LogP       : 2.98 ± 2.41
+  TPSA       : 81 ± 55 A^2
+  HBD / HBA  : 1.5 / 4.8
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  dMW=-7  dLogP=-0.00  dRings=-0.09  dHBD=+0.01  dTPSA=-1
+
+Community  26  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,428 nodes  (1428 HIV + 0 BrNPDB)
+  HIV active : 15  (1.1%,  0.3x global rate)
+  MW         : 379 ± 183 Da
+  LogP       : 3.04 ± 2.53
+  TPSA       : 84 ± 68 A^2
+  HBD / HBA  : 1.6 / 5.0
+  Rings      : 3.1 total  (2.1 aromatic)
+  Top enriched: thiol(1.6x,2%)
+  Depleted    : 
+  dMW=+9  dLogP=+0.06  dRings=+0.06  dHBD=+0.04  dTPSA=+2
+
+Community  18  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,268 nodes  (1268 HIV + 0 BrNPDB)
+  HIV active : 13  (1.0%,  0.3x global rate)
+  MW         : 377 ± 176 Da
+  LogP       : 3.02 ± 2.61
+  TPSA       : 86 ± 71 A^2
+  HBD / HBA  : 1.7 / 5.0
+  Rings      : 3.1 total  (2.1 aromatic)
+  Top enriched: indole(1.4x,3%)
+  Depleted    : 
+  dMW=+7  dLogP=+0.04  dRings=+0.03  dHBD=+0.13  dTPSA=+3
+
+Community   1  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,300 nodes  (1291 HIV + 9 BrNPDB)
+  HIV active : 12  (0.9%,  0.3x global rate)
+  MW         : 371 ± 160 Da
+  LogP       : 3.05 ± 2.54
+  TPSA       : 82 ± 55 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: aldehyde(1.7x,1%); thiophene(1.6x,3%); pyranose_sugar(1.4x,1%)
+  Depleted    : 
+  BrNPDB      : α-Terpinolene [1752] | 1,5-Cyclodecadiene, 1,5-dime [9705] | 1,5-Cyclodecadiene, 1,5-dime [6561] | Bicyclo[8.1.0]undeca-2,6-die [10226] | 1,5-Cyclodecadiene, 1,5-dime [5788]
+  dMW=+1  dLogP=+0.07  dRings=+0.08  dHBD=+0.00  dTPSA=-1
+
+Community  22  [Enriched in furanose_sugar (x2.1)]
+  Size       : 2,229 nodes  (2227 HIV + 2 BrNPDB)
+  HIV active : 20  (0.9%,  0.3x global rate)
+  MW         : 369 ± 170 Da
+  LogP       : 2.91 ± 2.54
+  TPSA       : 83 ± 62 A^2
+  HBD / HBA  : 1.5 / 5.0
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  BrNPDB      : 4H-1-Benzopyran-4-one, 5,6,7 [5613] | Ferulic acid [3470]
+  dMW=-1  dLogP=-0.07  dRings=+0.01  dHBD=-0.03  dTPSA=+1
+
+Community  14  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 2,609 nodes  (2609 HIV + 0 BrNPDB)
+  HIV active : 21  (0.8%,  0.2x global rate)
+  MW         : 370 ± 181 Da
+  LogP       : 3.00 ± 2.51
+  TPSA       : 82 ± 63 A^2
+  HBD / HBA  : 1.5 / 4.9
+  Rings      : 3.1 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  dMW=-0  dLogP=+0.02  dRings=+0.01  dHBD=-0.08  dTPSA=-1
+
+Community  10  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,033 nodes  (1033 HIV + 0 BrNPDB)
+  HIV active : 8  (0.8%,  0.2x global rate)
+  MW         : 363 ± 170 Da
+  LogP       : 2.91 ± 2.42
+  TPSA       : 83 ± 61 A^2
+  HBD / HBA  : 1.6 / 4.8
+  Rings      : 3.0 total  (1.9 aromatic)
+  Top enriched: pyranose_sugar(1.8x,1%); alkyne(1.6x,1%); sulfonate(1.4x,3%)
+  Depleted    : 
+  dMW=-7  dLogP=-0.07  dRings=-0.06  dHBD=+0.07  dTPSA=-0
+
+Community  25  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 1,870 nodes  (1845 HIV + 25 BrNPDB)
+  HIV active : 13  (0.7%,  0.2x global rate)
+  MW         : 365 ± 165 Da
+  LogP       : 3.00 ± 2.49
+  TPSA       : 83 ± 62 A^2
+  HBD / HBA  : 1.6 / 4.8
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: alkyne(1.3x,1%)
+  Depleted    : 
+  BrNPDB      : Bicyclo[7.2.0]undec-4-ene, 4 [10017] | Bicyclo[7.2.0]undec-4-ene, 4 [5308] | Bicyclo[7.2.0]undec-4-ene, 4 [5456] | 1,6-Cyclodecadiene, 1-methyl [7698] | farnesol [3151]
+  dMW=-5  dLogP=+0.02  dRings=-0.06  dHBD=+0.01  dTPSA=-0
+
+Community  23  [Drug-like / diverse (low chemical differentiation)]
+  Size       : 887 nodes  (887 HIV + 0 BrNPDB)
+  HIV active : 2  (0.2%,  0.1x global rate)
+  MW         : 358 ± 154 Da
+  LogP       : 3.02 ± 2.35
+  TPSA       : 77 ± 49 A^2
+  HBD / HBA  : 1.5 / 4.8
+  Rings      : 3.0 total  (2.0 aromatic)
+  Top enriched: 
+  Depleted    : 
+  dMW=-12  dLogP=+0.04  dRings=-0.05  dHBD=-0.07  dTPSA=-5
+

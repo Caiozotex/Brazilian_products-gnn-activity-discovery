@@ -1,0 +1,148 @@
+brnpdb_id,name,micro_community,micro_size,micro_hiv_rate,micro_n_active,macro_community,macro_family
+41273,Benzyl benzoate,41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41258,Arabinose,41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41230,"Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl",41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41234,"1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-meth",41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41167,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (",41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41246,"α-L-Mannopyranose, 6-deoxy-",41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41168,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (",41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41228,"Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methyl",41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41262,D-Galacturonic acid,41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41181,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylen",41273,9,0.6667,6,13,Pentoses livres + sesquiterpenos macrociclicos end
+41270,"1,4,8-Cycloundecatriene, 2,6,6,9-tetramethyl-, (1E,4E,8E)-",41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41272,"12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-",41230,9,0.6667,6,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41210,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-",38940,7,0.5714,4,12,Hexoses e acidos uronicoslivres
+41215,"Cyclobuta[1,2:3,4]dicyclopentene, decahydro-3a-methyl-6-meth",38940,7,0.5714,4,12,Hexoses e acidos uronicoslivres
+41198,"Bicyclo[3.1.0]hexan-3-ol, 4-methylene-1-(1-methylethyl)-, 3-",41231,10,0.5,5,12,Hexoses e acidos uronicoslivres
+41248,"4,6-Cyclopentacycloundecenediol, 1,2,3,3a,4,5,6,9,10,12a-dec",41231,10,0.5,5,12,Hexoses e acidos uronicoslivres
+41190,"9H-Xanthen-9-one, 2-β-D-glucopyranosyl-1,3,6,7-tetrahydroxy-",41231,10,0.5,5,12,Hexoses e acidos uronicoslivres
+41231,"Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl",41231,10,0.5,5,12,Hexoses e acidos uronicoslivres
+41247,"α-D-Galactopyranose, 6-deoxy-",41231,10,0.5,5,12,Hexoses e acidos uronicoslivres
+41169,"4H-1-Benzopyran-4-one, 3-(α-L-arabinopyranosyloxy)-2-(3,4-di",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41221,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41166,"2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41206,"Stigmast-5-en-3-ol, (3β,24S)-",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41217,"2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-,",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41177,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(β-D-galact",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41241,"1,6-Cyclodecadiene, 1-methyl-5-methylene-8-(1-methylethyl)-,",41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41227,Linalyl acetate,41217,21,0.4286,9,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41226,"Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 8-[(1R)-1,5-di",41023,5,0.4,2,11,Macrolida polienica (Amphotericin B)
+41176,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(β-D-glucop",4022,14,0.3571,5,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41233,"1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-meth",4022,14,0.3571,5,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41204,"1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7",4022,14,0.3571,5,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41153,"Urs-12-en-28-oic acid, 3-hydroxy-, (3α)-",4022,14,0.3571,5,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41182,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylen",41171,13,0.3077,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41193,"1H-Cycloprop[e]azulene, decahydro-1,1,4-trimethyl-7-methylen",41171,13,0.3077,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41171,"4H-1-Benzopyran-4-one, 3-(β-L-arabinopyranosyloxy)-2-(3,4-di",41171,13,0.3077,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41208,"Stigmast-5-en-3-ol, (3β,24ξ)-",41249,7,0.2857,2,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41249,"Bicyclo[8.1.0]undeca-2,6-diene, 3,7,11,11-tetramethyl-, (1S,",41249,7,0.2857,2,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41265,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5",18465,24,0.25,6,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41250,limonene,18465,24,0.25,6,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41179,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylen",18465,24,0.25,6,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41235,β-Pinene,35267,8,0.25,2,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41218,"2(3H)-Furanone, 5-(1,8-dihydroxy-2,4,6-octatriyn-1-yl)dihydr",18465,24,0.25,6,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41219,Tetradecanal,18465,24,0.25,6,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41203,tricyclene,35267,8,0.25,2,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41239,Linalool,41207,22,0.2273,5,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41207,"Stigmast-5-en-3-ol, (3β)-",41207,22,0.2273,5,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41213,"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, 3a,3b,4,5,6,7-hexa",41207,22,0.2273,5,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41229,"Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methyl",41207,22,0.2273,5,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41240,Camphene,24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41254,α-Terpinolene,24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41268,"1,8-Cineole",24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41127,"Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfa",24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41170,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy",24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41173,"4H-1-Benzopyran-4-one, 3-(β-D-arabinopyranosyloxy)-2-(3,4-di",24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41165,"2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl",24793,31,0.2258,7,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41162,lauric acid,8118,9,0.2222,2,15,p-Cumarico + benzoato de benzila (fenilpropanoide 
+41128,Amphotericin B,27879,9,0.2222,2,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41133,"9,12-Octadecadienoic acid",41134,9,0.2222,2,9,Flavonois simples (quercetina e derivados)
+41134,"L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L",41134,9,0.2222,2,9,Flavonois simples (quercetina e derivados)
+41195,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate",27879,9,0.2222,2,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41271,"12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-, ",41271,11,0.1818,2,13,Pentoses livres + sesquiterpenos macrociclicos end
+41216,"2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-,",41271,11,0.1818,2,13,Pentoses livres + sesquiterpenos macrociclicos end
+41267,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5",12358,18,0.1667,3,24,Alcaloide bisindolico macrociclico
+41136,"5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-α,α,3,8-tetrame",20197,6,0.1667,1,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41244,"2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-t",41263,25,0.16,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41263,D-Glucuronic acid,41263,25,0.16,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41191,"1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-metho",41263,25,0.16,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41199,"2(5H)-Oxepinone, 7-[6-(acetyloxy)-1-hydroxy-4-hexen-1-yl]-6,",41263,25,0.16,4,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41252,D-Galactose,36713,33,0.1515,5,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41220,Sabinene,36713,33,0.1515,5,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41163,"4H-1-Benzopyran-4-one, 3-[(6-deoxy-β-D-mannopyranosyl)oxy]-2",36713,33,0.1515,5,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41242,a-terpinene,36713,33,0.1515,5,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41131,"9,12-Octadecadienoic acid (9Z,12Z)-",12690,7,0.1429,1,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41172,"4H-1-Benzopyran-4-one, 3-(arabinopyranosyloxy)-2-(3,4-dihydr",21491,7,0.1429,1,22,Acido ferulico + flavona O-metilada (hispidulina)
+41138,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (",9065,7,0.1429,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41202,"4H-1-Benzopyran-4-one, 5,6,7-trihydroxy-3-methoxy-2-(4-metho",31868,29,0.1379,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41184,"1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylen",31868,29,0.1379,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41253,D-Glucose,31868,29,0.1379,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41266,"1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5",31128,46,0.1304,6,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41200,"5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methy",31128,46,0.1304,6,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41141,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β,19α,20β)-",13403,8,0.125,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41214,"2(3H)-Furanone, dihydro-4-hydroxy-5-(8-hydroxy-2,4,6-octatri",17189,16,0.125,2,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41188,"1H-Naphtho[2,1-a]xanthene-2,10-diol, 2,3,4,4a,4b,5,6,6a,12,1",17189,16,0.125,2,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41256,D-Ribose,33028,33,0.1212,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41225,"Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 9-(acetyloxy)-",33028,33,0.1212,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41174,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy",33028,33,0.1212,4,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41142,Dodecanedioic acid,22629,25,0.12,3,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41148,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, ",26612,9,0.1111,1,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41149,Quercetin,41149,30,0.1,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41264,γ-Terpinene,41149,30,0.1,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41189,4-nerolidylcathecol,41149,30,0.1,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41180,Ferulic acid,4141,20,0.1,2,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41196,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,",4141,20,0.1,2,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41187,"4H-1-Benzopyran-4-one, 6-β-D-glucopyranosyl-5,7-dihydroxy-2-",19661,41,0.0976,4,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41269,Malic acid,19661,41,0.0976,4,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41175,"Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (",19661,41,0.0976,4,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41143,"Urs-12-en-28-oic acid, 3-hydroxy-, (3β)-",19661,41,0.0976,4,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41259,L-Arabinose,22705,21,0.0952,2,17,Fitoesterois C28-C29 + acidos cinnamicos prenilado
+41186,"β-D-Glucopyranoside, 4-[[[(2E)-3-(3,4-dihydroxyphenyl)-1-oxo",36242,33,0.0909,3,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41245,"2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-t",36242,33,0.0909,3,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41205,"1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7",36242,33,0.0909,3,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41160,"2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-",21499,11,0.0909,1,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41201,"5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methy",507,35,0.0857,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41156,"Card-20(22)-enolide, 3-[(2,6-dideoxy-4-O-β-D-glucopyranosyl-",507,35,0.0857,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41158,capric acid,33891,12,0.0833,1,16,Acido cafeoico (hidroxicinamato catecol)
+41209,Stigmast-5-en-3-ol,28309,12,0.0833,1,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41137,"Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (",38755,12,0.0833,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41144,caffeic acid,18142,13,0.0769,1,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41222,"2(3H)-Furanone, dihydro-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-,",18203,40,0.075,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41212,Myrcene,18203,40,0.075,3,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41132,(E)-3-(4-Hydroxyphenyl)acrylic acid,7170,28,0.0714,2,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41255,D-Arabinose,34636,14,0.0714,1,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41139,"L-Galactose, 6-deoxy-",32939,29,0.069,2,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41194,Kaempferide,32939,29,0.069,2,3,Flavonas arabinosiladas + catecois sesquiterpenoid
+41157,hexadecanoic acid,7372,15,0.0667,1,22,Acido ferulico + flavona O-metilada (hispidulina)
+41155,"1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl",28297,15,0.0667,1,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41154,Octadecanal,38506,15,0.0667,1,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41260,L-Lyxose,6356,15,0.0667,1,8,Acido graxo omega-aromatico
+41223,"4H-1-Benzopyran-4-one, 2,3-dihydro-3,5,7-trihydroxy-2-(4-met",17680,15,0.0667,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41151,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, ",18500,16,0.0625,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41164,"4H-1-Benzopyran-4-one, 3-[(6-deoxy-α-L-mannopyranosyl)oxy]-2",34166,33,0.0606,2,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41237,Terpinen-4-ol,41129,33,0.0606,2,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41129,"β-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deo",41129,33,0.0606,2,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41150,"1H-Cycloprop[e]azulen-7-ol, 1a,2,3,5,6,7,7a,7b-octahydro-1,1",9691,17,0.0588,1,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41135,"Cycloocta[1,2-b:5,6-b′]diindole-6,13-dicarboxylic acid, 5,12",29867,54,0.0556,3,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41152,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, ",6846,108,0.0556,6,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41243,α-Pinene,6846,108,0.0556,6,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41145,"Olean-12-en-3-ol, (3β)-",29867,54,0.0556,3,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41211,"2(5H)-Furanone, 5-(2,4,6-octatriyn-1-yl)-, (5R)-",33410,38,0.0526,2,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41238,"6H-Purin-6-one, 2-amino-1,9-dihydro-9-[(2-hydroxyethoxy)meth",33410,38,0.0526,2,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41185,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5-hydroxy-3,7",18073,19,0.0526,1,20,Flavona C-glucosilada (vitexina/orientina)
+41146,myristic acid,26373,19,0.0526,1,15,p-Cumarico + benzoato de benzila (fenilpropanoide 
+41224,"4H-Benzo[de][1,6]naphthyridine, 8,9-dimethoxy-4-methyl-",38009,39,0.0513,2,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41178,"4H-1-Benzopyran-4-one, 3-(β-D-allopyranosyloxy)-2-(3,4-dihyd",18958,20,0.05,1,21,Diidroflavonol (taxifolina)
+41236,farnesol,12862,20,0.05,1,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41161,"2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-",12938,20,0.05,1,7,Flavonol O-metilado (caempferida)
+41197,"Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,",9416,24,0.0417,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41232,nerolidol,13658,24,0.0417,1,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41251,D-Mannose,39548,49,0.0408,2,4,Flavonois poliglicosilados + glicosideo fenilpropa
+41140,"L-Mannose, 6-deoxy-",24447,25,0.04,1,1,"Monoterpenos monocíclicos e oxidados (mentano, cin"
+41130,"9,12-Octadecadienoic acid, (9E,12E)-",19165,25,0.04,1,26,Zona HIV drug-like rica em tiois (sem BrNPDB)
+41147,"1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, ",32685,27,0.037,1,25,Sesquiterpenos macrociclicos (cariofilano/humulano
+41261,ω-fenil alcanoic acid,36316,83,0.0361,3,6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgo
+41159,3-O-methylquercetin,4454,29,0.0345,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41192,"1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-metho",39001,30,0.0333,1,2,Acidos graxos C10-C18 + triterpenos pentaciclicos 
+41257,D-Xylose,11482,44,0.0227,1,13,Pentoses livres + sesquiterpenos macrociclicos end
+41183,"4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-6-β-D-glucopy",37974,48,0.0208,1,3,Flavonas arabinosiladas + catecois sesquiterpenoid

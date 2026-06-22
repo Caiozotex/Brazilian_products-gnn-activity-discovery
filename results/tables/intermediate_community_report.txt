@@ -1,0 +1,37 @@
+Intermediate Community Analysis Report
+===========================================================================
+
+Hierarchical Structure:
+  Level 1: 2550 micro-communities
+  Level 2: 27 macro-communities
+  Compression ratio: 94x
+
+Micro-community statistics:
+  Size: min=2, max=108, median=13, mean=16.2
+  HIV rate: mean=0.0394
+  Zero-rate communities: 1879
+  Hot communities (>50%): 49
+
+Hot micro-communities distribution:
+  Macro C11: 43 hot micro-comms (Macrolida polienica (Amphotericin B))
+  Macro C17: 1 hot micro-comms (Fitoesterois C28-C29 + acidos cinnamicos prenilados)
+  Macro C3: 1 hot micro-comms (Flavonas arabinosiladas + catecois sesquiterpenoides)
+  Macro C13: 1 hot micro-comms (Pentoses livres + sesquiterpenos macrociclicos endoperoxidicos)
+  Macro C24: 1 hot micro-comms (Alcaloide bisindolico macrociclico)
+  Macro C12: 1 hot micro-comms (Hexoses e acidos uronicoslivres)
+
+Community 11 internal structure:
+  Micro-communities: 99
+  Hot (>50%): 44
+  Zero-rate: 9
+  Total nodes: 1481, Active: 677 (45.7%)
+
+Community 11 isolation:
+  Weighted degree: 636 (LOWEST among 27 communities)
+  Strongest neighbor: C16 (caffeic acid, 333 edges)
+  -> The hot zone is structurally isolated from generic drug space
+
+BrNPDB positioning:
+  75 distinct micro-communities contain BrNPDB
+  In hot micro-comms (>10%): 88 compounds
+  In cold micro-comms (0%):  0 compounds
