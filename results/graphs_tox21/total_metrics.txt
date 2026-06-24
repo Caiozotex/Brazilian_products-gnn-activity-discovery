@@ -1,2 +1,0 @@
-Total number of vertices: 145459
-Total number of edges: 151095

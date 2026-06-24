@@ -1,7 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "PowerShell(& \"C:\\\\Users\\\\davic\\\\.local\\\\bin\\\\python3.14.exe\" \"c:\\\\Users\\\\davic\\\\Desktop\\\\UNICAMP\\\\MC859\\\\Brazilian_products-gnn-activity-discovery\\\\gen_brnpdb_id.py\")"
-    ]
-  }
-}
