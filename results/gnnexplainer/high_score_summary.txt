@@ -1,0 +1,163 @@
+GNNExplainer Summary — HIGH consensus (>=0.5)
+======================================================================
+
+Compound  : Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfate)
+BrNPDB ID : 9477
+Community : 22705
+Consensus : 0.9647
+HIV prob  : 0.1589
+Top atoms : C,C,C,O,O,S,O,C,O,C
+Fragment  : C.C.O.O.O.CC.COS
+SMILES    : C[C@H](CC[C@H](C)C(C)(C)C)[C@H]1CC[C@@H]2[C@@]1(CC[C@H]3[C@H]2C[C@@H]([C@@H]4[C@@]3(C[C@@H]([C@H](C4)OS(=O)(=O)O)OS(=O)(=O)O)C)OS(=O)(=O)O)C
+----------------------------------------------------------------------
+
+Compound  : Amphotericin B
+BrNPDB ID : 7807
+Community : 41023
+Consensus : 0.7158
+HIV prob  : 0.0523
+Top atoms : C,C,C,C,C,C,C,O,C,C
+Fragment  : 
+SMILES    : C[C@H]1/C=C/C=C/C=C/C=C/C=C/C=C/C=C/[C@@H](C[C@H]2[C@@H]([C@H](C[C@](O2)(C[C@H](C[C@H]([C@@H](CC[C@H](C[C@H](CC(=O)O[C@H]([C@@H]([C@@H]1O)C)C)O)O)O)O)O)O)O)C(=O)O)O[C@H]3[C@H]([C@H]([C@@H]([C@H](O3)C)O)N)O
+----------------------------------------------------------------------
+
+Compound  : β-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deoxy-α-L-mannopyranosyl)-, 4-[(2E)-3-(3,4-dihydroxyphenyl)-2-propenoate]
+BrNPDB ID : 7267
+Community : 28309
+Consensus : 0.7148
+HIV prob  : 0.0113
+Top atoms : C,C,C,C,O,O,O,C,C,C
+Fragment  : C.c.C.O.O.O.cc.CC
+SMILES    : C[C@H]1[C@@H]([C@H]([C@H]([C@@H](O1)O[C@@H]2[C@H]([C@@H](O[C@@H]([C@H]2OC(=O)/C=C/C3=CC(=C(C=C3)O)O)CO)OCCC4=CC(=C(C=C4)O)O)O)O)O)O
+----------------------------------------------------------------------
+
+Compound  : 9,12-Octadecadienoic acid, (9E,12E)-
+BrNPDB ID : 5797
+Community : 4022
+Consensus : 0.6721
+HIV prob  : 0.0598
+Top atoms : C,C,C,C,O,C,C,C,C,C
+Fragment  : C.C.C.O.C/C=C/CCC
+SMILES    : CCCCC/C=C/C/C=C/CCCCCCCC(=O)O
+----------------------------------------------------------------------
+
+Compound  : 9,12-Octadecadienoic acid (9Z,12Z)-
+BrNPDB ID : 7150
+Community : 4022
+Consensus : 0.6721
+HIV prob  : 0.0411
+Top atoms : C,C,C,C,C,C,C,O,C,O
+Fragment  : C.C.C.O.O.CC.CCC
+SMILES    : CCCCC/C=C\C/C=C\CCCCCCCC(=O)O
+----------------------------------------------------------------------
+
+Compound  : (E)-3-(4-Hydroxyphenyl)acrylic acid
+BrNPDB ID : 3895
+Community : 8118
+Consensus : 0.6674
+HIV prob  : 0.0095
+Top atoms : C,C,C,C,C,C,C,C,C,O
+Fragment  : OC/C=C/c1ccccc1
+SMILES    : C1=CC(=CC=C1/C=C/C(=O)O)O
+----------------------------------------------------------------------
+
+Compound  : 9,12-Octadecadienoic acid
+BrNPDB ID : 8239
+Community : 4022
+Consensus : 0.6515
+HIV prob  : 0.0244
+Top atoms : C,C,O,C,C,C,C,C,C,C
+Fragment  : C.O.CCCC.CC.CC
+SMILES    : CCCCCC=CCC=CCCCCCCCC(=O)O
+----------------------------------------------------------------------
+
+Compound  : L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-α-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7→23)-disulfide
+BrNPDB ID : 8749
+Community : 36713
+Consensus : 0.6152
+HIV prob  : 0.0524
+Top atoms : 
+Fragment  : 
+SMILES    : 
+----------------------------------------------------------------------
+
+Compound  : Cycloocta[1,2-b:5,6-b′]diindole-6,13-dicarboxylic acid, 5,12-dihydro-, 6,13-dimethyl ester
+BrNPDB ID : 9611
+Community : 12358
+Consensus : 0.5628
+HIV prob  : 0.0098
+Top atoms : C,C,C,C,C,O,C,C,C,O
+Fragment  : c.c.C.C.O.C=O.ccc
+SMILES    : C1=C2C3=C(NC2=CC=C1)C(=CC1=C(NC2=CC=CC=C12)C(=C3)C(=O)OC)C(=O)OC
+----------------------------------------------------------------------
+
+Compound  : 5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-α,α,3,8-tetramethyl-, (3S,5R,8S)-
+BrNPDB ID : 7316
+Community : 18203
+Consensus : 0.5460
+HIV prob  : 0.0111
+Top atoms : C,C,O,C,C,C,C,C,C,C
+Fragment  : C.C.CCC.CC(C)(C)O
+SMILES    : CC(O)(C1CC=2C(CCC2C(CC1)C)C)C
+----------------------------------------------------------------------
+
+Compound  : Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)-
+BrNPDB ID : 9610
+Community : 31128
+Consensus : 0.5275
+HIV prob  : 0.0122
+Top atoms : C,C,C,C,C,C,C,C,C,C
+Fragment  : C.C.C.C.C=CCC.CC
+SMILES    : CC(=C)[C@@H]1CC[C@@]([C@@H](C1)C(=C)C)(C)C=C
+----------------------------------------------------------------------
+
+Compound  : Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-
+BrNPDB ID : 6859
+Community : 31128
+Consensus : 0.5216
+HIV prob  : 0.0174
+Top atoms : C,C,C,C,C,C,C,C,C,C
+Fragment  : C.C.C.C.C=CC(C)(C)C
+SMILES    : CC(=C)C1CCC(C(C1)C(=C)C)(C)C=C
+----------------------------------------------------------------------
+
+Compound  : L-Galactose, 6-deoxy-
+BrNPDB ID : 7287
+Community : 38940
+Consensus : 0.5202
+HIV prob  : 0.0173
+Top atoms : O,C,C,C,C,O,O,O,C,C
+Fragment  : CC[C@@H](O)[C@@H](O)[C@H](O)CO
+SMILES    : C[C@H]1[C@H]([C@H]([C@@H](C(O1)O)O)O)O
+----------------------------------------------------------------------
+
+Compound  : L-Mannose, 6-deoxy-
+BrNPDB ID : 7374
+Community : 38940
+Consensus : 0.5202
+HIV prob  : 0.0185
+Top atoms : C,O,C,O,C,O,C,O,C,C
+Fragment  : CC[C@H](O)[C@@H](O)[C@@H](O)CO
+SMILES    : C[C@H]1[C@@H]([C@H]([C@H](C(O1)O)O)O)O
+----------------------------------------------------------------------
+
+Compound  : Urs-12-en-28-oic acid, 3-hydroxy-, (3β,19α,20β)-
+BrNPDB ID : 5488
+Community : 41171
+Consensus : 0.5023
+HIV prob  : 0.0224
+Top atoms : C,C,C,O,C,C,C,C,C,C
+Fragment  : C.C.C.C.O.CC.CCC
+SMILES    : CC1CCC2(CCC3(C(=CCC4C3(CCC5C4(CCC(C5(C)C)O)C)C)C2C1C)C)C(=O)O
+----------------------------------------------------------------------
+
+Compound  : Dodecanedioic acid
+BrNPDB ID : 7619
+Community : 18203
+Consensus : 0.5017
+HIV prob  : 0.0279
+Top atoms : C,C,C,C,C,C,O,C,C,C
+Fragment  : C.CC.CC=O.CCCC
+SMILES    : C(CCCCCC(=O)O)CCCCC(=O)O
+----------------------------------------------------------------------
+

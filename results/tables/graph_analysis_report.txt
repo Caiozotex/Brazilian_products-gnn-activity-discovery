@@ -1,0 +1,220 @@
+Graph Analysis Report — hiv_knn_graph.gexf
+===========================================================================
+
+1. BASIC STATISTICS
+----------------------------------------
+  total_nodes               : 41274
+  total_edges               : 280854
+  density                   : 0.00032973725025739654
+  avg_degree                : 13.609245529873528
+  max_degree                : 31
+  min_degree                : 1
+  hiv_avg_deg               : 13.607727283779512
+  hiv_max_deg               : 31
+  brnpdb_avg_deg            : 14.034013605442176
+  brnpdb_max_deg            : 23
+  n_connected_components   : 1
+  giant_component_size     : 41,274
+  top5_component_sizes     : [np.int64(41274)]
+  cyclomatic_number        : 239,581  (independent cycles)
+
+2. TOP-10 HIGHEST DEGREE NODES (hubs)
+----------------------------------------
+   1. node= 32513  deg=   31  HIV_32513
+   2. node= 33398  deg=   30  HIV_33398
+   3. node= 18874  deg=   29  HIV_18874
+   4. node= 20983  deg=   28  HIV_20983
+   5. node= 34989  deg=   28  HIV_34989
+   6. node= 28804  deg=   28  HIV_28804
+   7. node= 22186  deg=   28  HIV_22186
+   8. node= 18097  deg=   28  HIV_18097
+   9. node=  9841  deg=   28  HIV_9841
+  10. node=  8662  deg=   28  HIV_8662
+
+3. TOP-5 HIGHEST DEGREE BrNPDB NODES
+----------------------------------------
+  1. node= 41127  deg=   23  Antiviral_41127
+  2. node= 41165  deg=   21  Antiviral_41165
+  3. node= 41129  deg=   20  Antiviral_41129
+  4. node= 41188  deg=   20  Antiviral_41188
+  5. node= 41170  deg=   20  Antiviral_41170
+
+4. LOUVAIN COMMUNITY DETECTION
+----------------------------------------
+  Communities          : 27
+  Modularity Q         : 0.8920
+  Largest community    : 2,878 nodes
+  Median size          : 1481 nodes
+  Singleton communities: 0
+
+5. HIV ACTIVITY SEPARATION BY COMMUNITY
+----------------------------------------
+  Global HIV-active rate   : 3.509%
+  3x threshold             : 10.526%
+  Comms with enrich = 0    : 0
+  Comms with 0 < e < 3x   : 26
+  Comms with 3x <= e < 5x : 0
+  Comms with e >= 5x (HOT) : 1
+
+6. BFS DISTANCE TO NEAREST HIV-ACTIVE NODE
+----------------------------------------
+  Min: 1  Max: 5  Mean: 2.12
+  distance=1: 34 BrNPDB compounds
+  distance=2: 70 BrNPDB compounds
+  distance=3: 38 BrNPDB compounds
+  distance=4: 2 BrNPDB compounds
+  distance=5: 3 BrNPDB compounds
+
+7. PREDICTIONS (score = 0.60*enrich_norm + 0.40*proximity)
+----------------------------------------
+  Threshold: >= 0.30 -> ACTIVE
+  Predicted ACTIVE   : 9
+  Predicted INACTIVE : 138
+
+  [ACTIVE  ] HIGH       score=1.0000  enrich=0.4569 (13.0x)  dist=1  BrNPDB 7807  Amphotericin B
+  [ACTIVE  ] MEDIUM     score=0.5604  enrich=0.0802 (2.3x)  dist=1  BrNPDB 9477  Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfate)
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 6662  2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-, (2E)-
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 7884  Stigmast-5-en-3-ol, (3?,24?)-
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 7333  Stigmast-5-en-3-ol, (3?)-
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 7233  Stigmast-5-en-3-ol
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 10052  2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-
+  [ACTIVE  ] MEDIUM     score=0.5204  enrich=0.0802 (2.3x)  dist=2  BrNPDB 8651  Stigmast-5-en-3-ol, (3?,24S)-
+  [ACTIVE  ] MEDIUM     score=0.5055  enrich=0.0747 (2.1x)  dist=2  BrNPDB 3471  caffeic acid
+  [INACTIVE] VERY_LOW   score=0.4239  enrich=0.0384 (1.1x)  dist=1  BrNPDB 9611  Cycloocta[1,2-b:5,6-b?]diindole-6,13-dicarboxylic acid, 5,12-dihydro-, 6,13-dimethyl ester
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 6310  Urs-12-en-28-oic acid, 3-hydroxy-, (3?)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 2144  myristic acid
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 5488  Urs-12-en-28-oic acid, 3-hydroxy-, (3?,19?,20?)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 5797  9,12-Octadecadienoic acid, (9E,12E)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 8749  L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-?-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7?23)-disulfide
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 6859  Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 6621  Urs-12-en-28-oic acid, 3-hydroxy-, (3?)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 8239  9,12-Octadecadienoic acid
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 2142  capric acid
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 6940  Olean-12-en-3-ol, (3?)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 7150  9,12-Octadecadienoic acid (9Z,12Z)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 7316  5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-?,?,3,8-tetramethyl-, (3S,5R,8S)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 7619  Dodecanedioic acid
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 2143  lauric acid
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 7674  Octadecanal
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 9610  Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)-
+  [INACTIVE] VERY_LOW   score=0.3789  enrich=0.0282 (0.8x)  dist=1  BrNPDB 1497  hexadecanoic acid
+  [INACTIVE] VERY_LOW   score=0.3466  enrich=0.0299 (0.8x)  dist=2  BrNPDB 122  Quercetin
+  [INACTIVE] VERY_LOW   score=0.3466  enrich=0.0299 (0.8x)  dist=2  BrNPDB 1223  3-O-methylquercetin
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 7198  1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aR,7R,7aS,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 5244  1H-Cycloprop[e]azulen-7-ol, 1a,2,3,5,6,7,7a,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,7S,7aS,7bR)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 6397  1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 9290  Card-20(22)-enolide, 3-[(2,6-dideoxy-4-O-?-D-glucopyranosyl-?-D-ribo-hexopyranosyl)oxy]-14-hydroxy-, (3?,5?)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 5806  1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7R,7aS,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 7858  1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aS,7R,7aS,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3434  enrich=0.0212 (0.6x)  dist=1  BrNPDB 8699  1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aS,4S,4aR,7S,7aR,7bR)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 8558  Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aR)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 6760  Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 6604  Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 9-(acetyloxy)-8-[(1R)-1,5-dimethyl-4-hexen-1-yl]-5-methyl-, (1R,5R,8S,9R)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 6585  1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 8833  Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2R,4R)-rel-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 9596  1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-rel-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 6597  Bicyclo[3.1.0]hexan-3-ol, 4-methylene-1-(1-methylethyl)-, 3-acetate, (1S,3S,5S)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 8780  2(3H)-Furanone, dihydro-4-hydroxy-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-, (4S,5S)-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 1737  Sabinene
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 9574  Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2S,4R)-rel-
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 3278  nerolidol
+  [INACTIVE] VERY_LOW   score=0.3389  enrich=0.0282 (0.8x)  dist=2  BrNPDB 7099  Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aS)-
+  [INACTIVE] VERY_LOW   score=0.3303  enrich=0.0189 (0.5x)  dist=1  BrNPDB 7267  ?-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deoxy-?-L-mannopyranosyl)-, 4-[(2E)-3-(3,4-dihydroxyphenyl)-2-propenoate]
+  [INACTIVE] VERY_LOW   score=0.3211  enrich=0.0172 (0.5x)  dist=1  BrNPDB 7287  L-Galactose, 6-deoxy-
+  [INACTIVE] VERY_LOW   score=0.3211  enrich=0.0172 (0.5x)  dist=1  BrNPDB 7374  L-Mannose, 6-deoxy-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 7030  1H-Cycloprop[e]azulene, decahydro-1,1,4-trimethyl-7-methylene-, (1aR,4R,4aR,7aR,7bR)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 7431  1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aS,7R,7aR,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 7602  1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7R,7aS,7bS)-rel-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 9218  Cyclobuta[1,2:3,4]dicyclopentene, decahydro-3a-methyl-6-methylene-1-(1-methylethyl)-, (1S,3aS,3bR,6aS,6bR)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 5327  1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7R,7aR,7bS)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 7805  Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1R,2S,6S,7S,8S)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 5437  1H-Cycloprop[e]azulene, decahydro-1,1,7-trimethyl-4-methylene-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 9377  Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1S,2R,6R,7R,8S)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 5783  1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, 3a,3b,4,5,6,7-hexahydro-3,7-dimethyl-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-
+  [INACTIVE] VERY_LOW   score=0.3034  enrich=0.0212 (0.6x)  dist=2  BrNPDB 9519  9H-Xanthen-9-one, 2-?-D-glucopyranosyl-1,3,6,7-tetrahydroxy-
+  [INACTIVE] VERY_LOW   score=0.3019  enrich=0.0210 (0.6x)  dist=2  BrNPDB 10222  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5-hydroxy-3,7-dimethoxy-6-methyl-
+  [INACTIVE] VERY_LOW   score=0.3019  enrich=0.0210 (0.6x)  dist=2  BrNPDB 3887  4-nerolidylcathecol
+  [INACTIVE] VERY_LOW   score=0.3019  enrich=0.0210 (0.6x)  dist=2  BrNPDB 6665  1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-methoxy-3-methylphenyl)methyl]-5,6,8a-trimethyl-2-(1-methylethylidene)-, methyl ester, [1S-(1?,4a?,5?,6?,8a?)]-
+  [INACTIVE] VERY_LOW   score=0.3019  enrich=0.0210 (0.6x)  dist=2  BrNPDB 1747  Myrcene
+  [INACTIVE] VERY_LOW   score=0.3019  enrich=0.0210 (0.6x)  dist=2  BrNPDB 6009  1-Naphthalenepropanoic acid, decahydro-5-[(2-hydroxy-5-methoxy-3-methylphenyl)methyl]-5,6,8a-trimethyl-2-(1-methylethylidene)-, (1S,4aR,5S,6S,8aR)-
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 7246  2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2Z)-
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 3631  Tetradecanal
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 1915  tricyclene
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 1746  ?-Pinene
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 6695  Bicyclo[3.3.1]non-2-ene-1,2-dicarboxaldehyde, 8-[(1R)-1,5-dimethyl-4-hexen-1-yl]-9-hydroxy-5-methyl-, (1R,5R,8S,9R)-
+  [INACTIVE] VERY_LOW   score=0.2989  enrich=0.0282 (0.8x)  dist=3  BrNPDB 9023  2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2E)-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 5243  4H-1-Benzopyran-4-one, 3-(?-D-allopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 7187  4H-1-Benzopyran-4-one, 3-[(6-deoxy-?-D-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 9109  ?-D-Glucopyranoside, 4-[[[(2E)-3-(3,4-dihydroxyphenyl)-1-oxo-2-propen-1-yl]oxy]methyl]-2-hydroxyphenyl
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 7515  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(?-D-galactopyranosyloxy)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 9216  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(?-D-glucopyranosyloxy)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 6560  4H-1-Benzopyran-4-one, 3-[(6-deoxy-?-L-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2903  enrich=0.0189 (0.5x)  dist=2  BrNPDB 8883  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-6-?-D-glucopyranosyl-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2902  enrich=0.0122 (0.3x)  dist=1  BrNPDB 3895  (E)-3-(4-Hydroxyphenyl)acrylic acid
+  [INACTIVE] VERY_LOW   score=0.2811  enrich=0.0172 (0.5x)  dist=2  BrNPDB 8971  D-Glucose
+  [INACTIVE] VERY_LOW   score=0.2811  enrich=0.0172 (0.5x)  dist=2  BrNPDB 9018  D-Galactose
+  [INACTIVE] VERY_LOW   score=0.2811  enrich=0.0172 (0.5x)  dist=2  BrNPDB 8123  D-Mannose
+  [INACTIVE] VERY_LOW   score=0.2676  enrich=0.0150 (0.4x)  dist=2  BrNPDB 6523  4H-1-Benzopyran-4-one, 6-?-D-glucopyranosyl-5,7-dihydroxy-2-(4-hydroxyphenyl)-
+  [INACTIVE] VERY_LOW   score=0.2643  enrich=0.0214 (0.6x)  dist=3  BrNPDB 3892  Kaempferide
+  [INACTIVE] VERY_LOW   score=0.2634  enrich=0.0212 (0.6x)  dist=3  BrNPDB 10068  ?-L-Mannopyranose, 6-deoxy-
+  [INACTIVE] VERY_LOW   score=0.2634  enrich=0.0212 (0.6x)  dist=3  BrNPDB 8606  ?-D-Galactopyranose, 6-deoxy-
+  [INACTIVE] VERY_LOW   score=0.2634  enrich=0.0212 (0.6x)  dist=3  BrNPDB 7314  1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7S,7aR,7bR)-
+  [INACTIVE] VERY_LOW   score=0.2634  enrich=0.0212 (0.6x)  dist=3  BrNPDB 8640  1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aS,4aS,7R,7aS,7bS)-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 8078  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(?-D-xylopyranosyloxy)-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 9756  4H-1-Benzopyran-4-one, 3-(arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 1389  Linalyl acetate
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 6361  1H-Naphtho[2,1-a]xanthene-2,10-diol, 2,3,4,4a,4b,5,6,6a,12,12a,12b,13,14,14a-tetradecahydro-1,1,4a,6a,8,12b-hexamethyl-, (2S,4aR,4bS,6aS,12aS,12bS,14aR)-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 9918  4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(D-xylopyranosyloxy)-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 5353  4H-1-Benzopyran-4-one, 3-(?-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 5412  4H-1-Benzopyran-4-one, 3-(?-D-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2619  enrich=0.0210 (0.6x)  dist=3  BrNPDB 9546  4H-1-Benzopyran-4-one, 3-(?-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+  [INACTIVE] VERY_LOW   score=0.2554  enrich=0.0070 (0.2x)  dist=1  BrNPDB 10017  Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9R)-
+  [INACTIVE] VERY_LOW   score=0.2554  enrich=0.0070 (0.2x)  dist=1  BrNPDB 5308  Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4Z,9S)-
+  [INACTIVE] VERY_LOW   score=0.2554  enrich=0.0070 (0.2x)  dist=1  BrNPDB 5456  Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9S)-
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 9464  D-Ribose
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 6231  Arabinose
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 8910  L-Arabinose
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 8304  D-Arabinose
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 9971  D-Xylose
+  [INACTIVE] VERY_LOW   score=0.2511  enrich=0.0190 (0.5x)  dist=3  BrNPDB 7881  L-Lyxose
+  [INACTIVE] VERY_LOW   score=0.2459  enrich=0.0115 (0.3x)  dist=2  BrNPDB 5919  4H-1-Benzopyran-4-one, 2,3-dihydro-3,5,7-trihydroxy-2-(4-methoxyphenyl)-, (2R,3R)-
+  [INACTIVE] VERY_LOW   score=0.2411  enrich=0.0172 (0.5x)  dist=3  BrNPDB 6715  D-Galacturonic acid
+  [INACTIVE] VERY_LOW   score=0.2411  enrich=0.0172 (0.5x)  dist=3  BrNPDB 6593  D-Glucuronic acid
+  [INACTIVE] VERY_LOW   score=0.2312  enrich=0.0093 (0.3x)  dist=2  BrNPDB 1752  ?-Terpinolene
+  [INACTIVE] VERY_LOW   score=0.2312  enrich=0.0093 (0.3x)  dist=2  BrNPDB 9705  1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5Z,8S)-
+  [INACTIVE] VERY_LOW   score=0.2312  enrich=0.0093 (0.3x)  dist=2  BrNPDB 6561  1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8S)-
+  [INACTIVE] VERY_LOW   score=0.2312  enrich=0.0093 (0.3x)  dist=2  BrNPDB 10226  Bicyclo[8.1.0]undeca-2,6-diene, 3,7,11,11-tetramethyl-, (1S,2E,6E,10R)-
+  [INACTIVE] VERY_LOW   score=0.2312  enrich=0.0093 (0.3x)  dist=2  BrNPDB 5788  1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8R)-
+  [INACTIVE] VERY_LOW   score=0.2290  enrich=0.0090 (0.3x)  dist=2  BrNPDB 5613  4H-1-Benzopyran-4-one, 5,6,7-trihydroxy-3-methoxy-2-(4-methoxyphenyl)-
+  [INACTIVE] VERY_LOW   score=0.2290  enrich=0.0090 (0.3x)  dist=2  BrNPDB 3470  Ferulic acid
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 7698  1,6-Cyclodecadiene, 1-methyl-5-methylene-8-(1-methylethyl)-, (1E,6E,8S)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 3151  farnesol
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 7367  2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-?,?,4a,8-tetramethyl-, (2R,4aS)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 1755  ?-Pinene
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 5696  Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 1902  a-terpinene
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 9647  5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methylene-, (1R,4R,6R,10S)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 9283  5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methylene-, (1S,4R,6R,10R)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 7477  2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4S,5R)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 7499  2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4R,5S)-rel-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 6636  4H-Benzo[de][1,6]naphthyridine, 8,9-dimethoxy-4-methyl-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 10174  4,6-Cyclopentacycloundecenediol, 1,2,3,3a,4,5,6,9,10,12a-decahydro-3-(1-hydroxy-1-methylethyl)-6,10,12a-trimethyl-, (3R,3aS,4S,6S,7E,10R,11E,12aR)-rel-(-)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 6567  2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-?,?,4a,8-tetramethyl-, (2R,4aR)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 8658  Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1S,4E,9R)-
+  [INACTIVE] VERY_LOW   score=0.2154  enrich=0.0070 (0.2x)  dist=2  BrNPDB 1380  Linalool
+  [INACTIVE] VERY_LOW   score=0.2136  enrich=0.0127 (0.4x)  dist=3  BrNPDB 949  ?-fenil alcanoic acid
+  [INACTIVE] VERY_LOW   score=0.2111  enrich=0.0190 (0.5x)  dist=4  BrNPDB 9449  1,4,8-Cycloundecatriene, 2,6,6,9-tetramethyl-, (1E,4E,8E)-
+  [INACTIVE] VERY_LOW   score=0.2102  enrich=0.0122 (0.3x)  dist=3  BrNPDB 1828  Benzyl benzoate
+  [INACTIVE] VERY_LOW   score=0.1912  enrich=0.0093 (0.3x)  dist=3  BrNPDB 3046  Malic acid
+  [INACTIVE] VERY_LOW   score=0.1912  enrich=0.0093 (0.3x)  dist=3  BrNPDB 1914  limonene
+  [INACTIVE] VERY_LOW   score=0.1912  enrich=0.0093 (0.3x)  dist=3  BrNPDB 1750  ?-Terpinene
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 1741  Terpinen-4-ol
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 5936  2(3H)-Furanone, dihydro-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-, (5S)-
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 9601  2(3H)-Furanone, 5-(1,8-dihydroxy-2,4,6-octatriyn-1-yl)dihydro-, (5S)-
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 9032  2(5H)-Furanone, 5-(2,4,6-octatriyn-1-yl)-, (5R)-
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 8570  6H-Purin-6-one, 2-amino-1,9-dihydro-9-[(2-hydroxyethoxy)methyl]-
+  [INACTIVE] VERY_LOW   score=0.1754  enrich=0.0070 (0.2x)  dist=3  BrNPDB 8237  2(5H)-Oxepinone, 7-[6-(acetyloxy)-1-hydroxy-4-hexen-1-yl]-6,7-dihydro-7-methyl-3-(4-methyl-3-penten-1-yl)-
+  [INACTIVE] VERY_LOW   score=0.1711  enrich=0.0190 (0.5x)  dist=5  BrNPDB 7404  12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-, (1R,3E,7E,11R)-
+  [INACTIVE] VERY_LOW   score=0.1711  enrich=0.0190 (0.5x)  dist=5  BrNPDB 9811  12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-
+  [INACTIVE] VERY_LOW   score=0.1354  enrich=0.0070 (0.2x)  dist=4  BrNPDB 2027  Camphene
+  [INACTIVE] VERY_LOW   score=0.1112  enrich=0.0093 (0.3x)  dist=5  BrNPDB 1745  1,8-Cineole

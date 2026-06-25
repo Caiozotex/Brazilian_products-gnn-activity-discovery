@@ -1,0 +1,211 @@
+MEHAC — Multi-Evidence HIV Activity Classifier
+===========================================================================
+
+Algorithm: final_score = 0.35*S1 + 0.3*S2 + 0.25*S3 + 0.1*S4
+  S1 = mlp_score normalized  (GNN direct structural prediction)
+  S2 = lp_score normalized   (label propagation through k-NN graph)
+  S3 = knn_hiv_frac          (fraction HIV-active immediate neighbors)
+  S4 = struct_score          (functional-group lift)
+Threshold: 0.35  (>= → ACTIVE)
+
+Total compounds : 147
+Predicted ACTIVE: 18
+Predicted INACTIVE: 129
+
+─── PREDICTED ACTIVE ──────────────────────────────────────────────────
+
+BrNPDB   9477  [HIGH     ]  score=0.7515  S1=1.000  S2=0.929  S3=0.091  S4=1.000
+  Name     : Ergostane-2,3,6-triol, 25-methyl-, 2,3,6-tris(hydrogen sulfate)
+  Community: 22705
+  HIV neighbors: 1/11 active
+  Signals agree: 4/4
+
+BrNPDB   5797  [MEDIUM   ]  score=0.5276  S1=0.344  S2=1.000  S3=0.333  S4=0.238
+  Name     : 9,12-Octadecadienoic acid, (9E,12E)-
+  Community: 4022
+  HIV neighbors: 3/9 active
+  Signals agree: 2/4
+
+BrNPDB   7150  [MEDIUM   ]  score=0.5276  S1=0.344  S2=1.000  S3=0.333  S4=0.238
+  Name     : 9,12-Octadecadienoic acid (9Z,12Z)-
+  Community: 4022
+  HIV neighbors: 3/9 active
+  Signals agree: 2/4
+
+BrNPDB   7267  [MEDIUM   ]  score=0.5250  S1=0.541  S2=0.888  S3=0.167  S4=0.274
+  Name     : ?-D-Glucopyranoside, 2-(3,4-dihydroxyphenyl)ethyl 3-O-(6-deoxy-?-L-mannopyranosyl)-, 4-[(2E)-3-(3,4-dihydroxyphenyl)-2-propenoate]
+  Community: 28309
+  HIV neighbors: 2/12 active
+  Signals agree: 3/4
+
+BrNPDB   7807  [MEDIUM   ]  score=0.5205  S1=0.727  S2=0.705  S3=0.100  S4=0.297
+  Name     : Amphotericin B
+  Community: 41023
+  HIV neighbors: 1/10 active
+  Signals agree: 3/4
+
+BrNPDB   3895  [MEDIUM   ]  score=0.5045  S1=0.361  S2=0.974  S3=0.200  S4=0.361
+  Name     : (E)-3-(4-Hydroxyphenyl)acrylic acid
+  Community: 8118
+  HIV neighbors: 2/10 active
+  Signals agree: 2/4
+
+BrNPDB   8239  [MEDIUM   ]  score=0.4944  S1=0.344  S2=0.959  S3=0.250  S4=0.238
+  Name     : 9,12-Octadecadienoic acid
+  Community: 4022
+  HIV neighbors: 2/8 active
+  Signals agree: 2/4
+
+BrNPDB   9611  [MEDIUM   ]  score=0.4292  S1=0.277  S2=0.849  S3=0.091  S4=0.549
+  Name     : Cycloocta[1,2-b:5,6-b?]diindole-6,13-dicarboxylic acid, 5,12-dihydro-, 6,13-dimethyl ester
+  Community: 12358
+  HIV neighbors: 1/11 active
+  Signals agree: 3/4
+
+BrNPDB   8749  [MEDIUM   ]  score=0.4229  S1=0.430  S2=0.800  S3=0.077  S4=0.131
+  Name     : L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-?-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7?23)-disulfide
+  Community: 36713
+  HIV neighbors: 1/13 active
+  Signals agree: 2/4
+
+BrNPDB   3471  [LOW      ]  score=0.3773  S1=0.957  S2=0.000  S3=0.000  S4=0.425
+  Name     : caffeic acid
+  Community: 33891
+  HIV neighbors: 0/10 active
+  Signals agree: 1/4
+
+BrNPDB   7316  [LOW      ]  score=0.3753  S1=0.204  S2=0.888  S3=0.105  S4=0.112
+  Name     : 5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-?,?,3,8-tetramethyl-, (3S,5R,8S)-
+  Community: 18203
+  HIV neighbors: 2/19 active
+  Signals agree: 2/4
+
+BrNPDB   7287  [LOW      ]  score=0.3708  S1=0.074  S2=0.967  S3=0.182  S4=0.096
+  Name     : L-Galactose, 6-deoxy-
+  Community: 38940
+  HIV neighbors: 2/11 active
+  Signals agree: 2/4
+
+BrNPDB   7374  [LOW      ]  score=0.3708  S1=0.074  S2=0.967  S3=0.182  S4=0.096
+  Name     : L-Mannose, 6-deoxy-
+  Community: 38940
+  HIV neighbors: 2/11 active
+  Signals agree: 2/4
+
+BrNPDB   9610  [LOW      ]  score=0.3604  S1=0.181  S2=0.874  S3=0.091  S4=0.121
+  Name     : Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)-
+  Community: 31128
+  HIV neighbors: 1/11 active
+  Signals agree: 2/4
+
+BrNPDB   7619  [LOW      ]  score=0.3571  S1=0.210  S2=0.793  S3=0.083  S4=0.247
+  Name     : Dodecanedioic acid
+  Community: 18203
+  HIV neighbors: 1/12 active
+  Signals agree: 2/4
+
+BrNPDB   6859  [LOW      ]  score=0.3550  S1=0.181  S2=0.862  S3=0.083  S4=0.121
+  Name     : Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-
+  Community: 31128
+  HIV neighbors: 1/12 active
+  Signals agree: 2/4
+
+BrNPDB   5488  [LOW      ]  score=0.3538  S1=0.207  S2=0.797  S3=0.077  S4=0.228
+  Name     : Urs-12-en-28-oic acid, 3-hydroxy-, (3?,19?,20?)-
+  Community: 41171
+  HIV neighbors: 1/13 active
+  Signals agree: 2/4
+
+BrNPDB   6310  [LOW      ]  score=0.3502  S1=0.207  S2=0.785  S3=0.077  S4=0.228
+  Name     : Urs-12-en-28-oic acid, 3-hydroxy-, (3?)-
+  Community: 41171
+  HIV neighbors: 1/13 active
+  Signals agree: 2/4
+
+
+─── PREDICTED INACTIVE (borderline, score 0.25–0.35) ──────────────────
+
+BrNPDB    122  [BORDERLINE]  score=0.3490
+  Name: Quercetin
+
+BrNPDB   8699  [BORDERLINE]  score=0.3344
+  Name: 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aS,4S,4aR,7S,7aR,7bR)-
+
+BrNPDB   2144  [BORDERLINE]  score=0.3303
+  Name: myristic acid
+
+BrNPDB   7858  [BORDERLINE]  score=0.3240
+  Name: 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aS,7R,7aS,7bS)-
+
+BrNPDB   6940  [BORDERLINE]  score=0.3227
+  Name: Olean-12-en-3-ol, (3?)-
+
+BrNPDB   7198  [BORDERLINE]  score=0.3160
+  Name: 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aR,7R,7aS,7bS)-
+
+BrNPDB   6621  [BORDERLINE]  score=0.3152
+  Name: Urs-12-en-28-oic acid, 3-hydroxy-, (3?)-
+
+BrNPDB   5244  [BORDERLINE]  score=0.3089
+  Name: 1H-Cycloprop[e]azulen-7-ol, 1a,2,3,5,6,7,7a,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,7S,7aS,7bR)-
+
+BrNPDB   5806  [BORDERLINE]  score=0.3086
+  Name: 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7R,7aS,7bS)-
+
+BrNPDB   1497  [BORDERLINE]  score=0.2992
+  Name: hexadecanoic acid
+
+BrNPDB   1223  [BORDERLINE]  score=0.2989
+  Name: 3-O-methylquercetin
+
+BrNPDB   6397  [BORDERLINE]  score=0.2987
+  Name: 1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)-
+
+BrNPDB   7674  [BORDERLINE]  score=0.2972
+  Name: Octadecanal
+
+BrNPDB   9290  [BORDERLINE]  score=0.2946
+  Name: Card-20(22)-enolide, 3-[(2,6-dideoxy-4-O-?-D-glucopyranosyl-?-D-ribo-hexopyranosyl)oxy]-14-hydroxy-, (3?,5?)-
+
+BrNPDB   9023  [BORDERLINE]  score=0.2924
+  Name: 2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2E)-
+
+BrNPDB   7246  [BORDERLINE]  score=0.2924
+  Name: 2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2Z)-
+
+BrNPDB   2142  [BORDERLINE]  score=0.2859
+  Name: capric acid
+
+BrNPDB  10052  [BORDERLINE]  score=0.2833
+  Name: 2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-
+
+BrNPDB   6662  [BORDERLINE]  score=0.2833
+  Name: 2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-, (2E)-
+
+BrNPDB   7187  [BORDERLINE]  score=0.2799
+  Name: 4H-1-Benzopyran-4-one, 3-[(6-deoxy-?-D-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+
+BrNPDB   6560  [BORDERLINE]  score=0.2799
+  Name: 4H-1-Benzopyran-4-one, 3-[(6-deoxy-?-L-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+
+BrNPDB   2143  [BORDERLINE]  score=0.2680
+  Name: lauric acid
+
+BrNPDB   5353  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 3-(?-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+
+BrNPDB   8078  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(?-D-xylopyranosyloxy)-
+
+BrNPDB   5412  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 3-(?-D-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+
+BrNPDB   9756  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 3-(arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+
+BrNPDB   9918  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(D-xylopyranosyloxy)-
+
+BrNPDB   9546  [BORDERLINE]  score=0.2643
+  Name: 4H-1-Benzopyran-4-one, 3-(?-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-
+

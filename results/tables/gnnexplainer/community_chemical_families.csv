@@ -1,0 +1,28 @@
+comunidade,familia_quimica,n_brnpdb,taxa_hiv_x,explicacao
+11,Macrolida polienica (Amphotericin B),1,13.0,"Anfotericina B: macrolida com cadeia polienica C38 e anel lactona. Enriquecimento em tioeter (1.3x) e F (1.3x) no HIV space, tipico de inibidores aprovados."
+17,Fitoesterois C28-C29 + acidos cinnamicos prenilados,7,2.3,"Estigmasterol (3 estereoisomeros) + ergostano sulfatado + acidos 3-[4-OH-3,5-bis(prenilfenil)]propenoicos. Esqueleto ciclopentanoperidrofenantrenico com cadeia lateral longa."
+16,Acido cafeoico (hidroxicinamato catecol),1,2.1,"Acido 3,4-dihidroxicinnamico. Catecol + acido propenoico. Comunidade HIV levemente enriquecida em aldeidos e sulfonatos."
+5,Zona HIV drug-like glicosidica e sulfonada (sem BrNPDB),0,2.0,"Sem representantes BrNPDB. Enriquecida em piranose (1.7x), OH (1.5x) e furano (1.4x): possivelmente inibidores com farmacofor glicosidico."
+24,Alcaloide bisindolico macrociclico,1,1.1,Ciclooct[diindol]-dicarboxilato: anel ciclooctadieno fusionado a dois nucleos indolicos. Classe isolada de esponjas marinhas com atividade antiviral reportada.
+9,Flavonois simples (quercetina e derivados),2,0.85,Quercetina e 3-O-metilquercetina: flavonois 3-OH com catecol no anel B.
+2,Acidos graxos C10-C18 + triterpenos pentaciclicos + sesquiterpenos biciclicos,35,0.8,"Maior cluster BrNPDB (35 compostos). Mistura: acidos graxos lineares (C10-C18), acidos ursolicop/oleanoico, sesquiterpenos (nerolidol, sabineno, pineno), peptideo ciclico disulfeto, aldeidos graxos."
+6,Sesquiterpenos ciclopropazulenoides (cedrano/gorgonano) + cardenolideo,21,0.6,"16 compostos 1H-cicloprop[e]azuleno decahidro-1,1,4/7-trimetil: sesquiterpenos triciclicos com ciclopropano. Tambem glicosideo cardenolidico, xantona glucosilada, fucose e galactose livres."
+7,Flavonol O-metilado (caempferida),1,0.6,Caempferida = 4-O-metilkaempferol. Comunidade HIV enriquecida em imidazol (1.3x).
+3,Flavonas arabinosiladas + catecois sesquiterpenoides,13,0.6,"Luteolina, luteolina-arabinosideo, catecol nerolidilico, acido naftalenopropanoico, mirceno, linalil acetato. Perfil fenolico + terpenoide misto."
+12,Hexoses e acidos uronicoslivres,7,0.5,"L-Fucose, L-Ramnose, D-Glucose, D-Galactose, D-Manose, ac. D-Galacturonico, ac. D-Glucuronico. Monossacarideos polares. HIV dataset enriquecido em pirrol/indol mas BrNPDB contribuem apenas acucares."
+19,Zona HIV drug-like com aldeidos (sem BrNPDB),0,0.5,Sem representantes BrNPDB. Leve enriquecimento em aldeidos (1.6x).
+13,Pentoses livres + sesquiterpenos macrociclicos endoperoxidicos,9,0.5,"D-Ribose, D/L-Arabinose, D-Xilose, L-Lixose (pentoses). Mais cicloundecatrieno e oxabiciclos com epoxido endoperoxidico."
+4,Flavonois poliglicosilados + glicosideo fenilpropanoide (verbascoside),8,0.5,Verbascoside + quercetina-3-O-rhamnosideo + rutina + flavonois allopyranosideo. Todos glicosilados com ligacao O-glicosidica.
+20,Flavona C-glucosilada (vitexina/orientina),1,0.4,"4H-1-Benzopiran-4-ona 6-beta-D-glucopiranosil-5,7-diOH: C-glicosideo com ligacao C-C direta ao anel flavonico."
+8,Acido graxo omega-aromatico,1,0.4,Acido omega-fenilalcanoico: cadeia alifatica terminada em benzeno. Intermediario entre lipidio e fenilpropanoide.
+15,p-Cumarico + benzoato de benzila (fenilpropanoide + ester aromatico),2,0.3,Acido p-cumarico (4-OH-cinnamico) e benzoato de benzila (ester diaromatico). Fenilpropanoides sem catecol.
+21,Diidroflavonol (taxifolina),1,0.3,"2,3-diidro-3,5,7-triOH-flavanona: taxifolina. Anel C parcialmente saturado C2-C3."
+1,"Monoterpenos monocíclicos e oxidados (mentano, cineol)",9,0.3,"Limoneno, terpinoleno, alpha/gamma-terpineno, 1,8-cineol, biciclo-undecadieno. Todos C10, volateis, tipicos de oleos essenciais. Inclui acido malico."
+22,Acido ferulico + flavona O-metilada (hispidulina),2,0.3,"Acido ferulico (metoxicinnamato) e hispidulina (flavona 5,6,7-triOH-3-metoxi). Fenilpropanoide metilado + flavona metilada."
+0,Zona HIV drug-like generica (sem BrNPDB),0,0.3,Sem representantes BrNPDB. Sem caracteristica estrutural distinta vs. media global.
+26,Zona HIV drug-like rica em tiois (sem BrNPDB),0,0.3,Sem representantes BrNPDB. Enriquecida em tiol (1.6x): possivelmente peptidomimeticos ou compostos covalentes anti-HIV.
+18,Zona HIV drug-like rica em indol (sem BrNPDB),0,0.3,Sem representantes BrNPDB. Enriquecida em indol (1.4x): similar a inibidores de integrase.
+25,Sesquiterpenos macrociclicos (cariofilano/humulano) + lactonas poliacetilenicas + aciclovir,25,0.2,"Cariofileno/humulano (5 compostos C15), butenolidas poliacetilenicas com cadeia octatriyn-1-il (7 compostos), monoterpenos (pineno, camfeno, linalol), aciclovir (antiviral clinico!), naftalenometanol sesquiterpenico."
+14,Zona HIV drug-like generica (sem BrNPDB),0,0.2,Sem representantes BrNPDB. Sem diferenciacao estrutural significativa.
+10,Zona HIV drug-like com alcinos e piranoses (sem BrNPDB),0,0.2,"Sem representantes BrNPDB. Enriquecida em piranose (1.8x), alcino (1.6x) e sulfonato (1.4x): possivelmente inibidores tipo stavudina/NRTIs com farmacofor alcino."
+23,Zona HIV drug-like de menor MW (sem BrNPDB),0,0.1,Sem representantes BrNPDB. delta MW=-12 Da vs. media global: compartimento de compostos menores no espaco quimico.

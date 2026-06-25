@@ -1,0 +1,222 @@
+Structural Pattern Mining — BrNPDB Communities
+===========================================================================
+
+Total communities with >=2 BrNPDB compounds: 31
+
+Community 41217 | n=8 | mean consensus=0.364
+---------------------------------------------------------------------------
+Compounds        : 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aS,4S,4aR,7S,7aR,7bR)- | 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aS,7R,7aS,7bS)- | 1H-Cycloprop[e]azulen-4-ol, decahydro-1,1,4,7-tetramethyl-, (1aR,4S,4aR,7R,7aS,7bS)- | 1H-Cycloprop[e]azulen-4-ol, decahydro-1
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1-&@[#6]-&@[#6]-&@[#6]2-&@[#6]-&@1-&@[#6]1-&@[#6](-&@[#6]-&@1(-&!@[#6&!R])-&!@[#6&!R])-&@[#6]-&@[#6]-&@[#6]-&@2
+Recurring groups : hydroxyl(4); alkene(4)
+Shared scaffolds : C1CC2CCCC2C2CC2C1 (x4); C=C1CC[C@H]2C[C@H]2[C@@H]2CCC[C@@H]12 (x3)
+
+Community 24793 | n=7 | mean consensus=0.214
+---------------------------------------------------------------------------
+Compounds        : Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9S)- | Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4Z,9S)- | Bicyclo[7.2.0]undec-4-ene, 4,11,11-trimethyl-8-methylene-, (1R,4E,9R)- | 5-Oxatricyclo[8.2.0.04,6]dodecane, 4,12,12-trimethyl-9-methylene-, (1R,4R,6R,10S)
+MCS (SMARTS)     : [#6]1-&@[#6]-&@[#6](-&@[#6]-&@1)(-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : alkene(7)
+Shared scaffolds : C=C1CC/C=C/CC[C@H]2CC[C@H]12 (x3); C=C1CCC2OC2CCC2CCC12 (x2)
+
+Community 41273 | n=6 | mean consensus=0.022
+---------------------------------------------------------------------------
+Compounds        : D-Arabinose | D-Ribose | D-Xylose | Arabinose | L-Arabinose | L-Lyxose
+MCS (SMARTS)     : [#8&!R]
+Recurring groups : hydroxyl(6); ether(4); pyranose_sugar(4)
+Shared scaffolds : C1CCOCC1 (x4); (none) (x2)
+
+Community 41230 | n=6 | mean consensus=0.337
+---------------------------------------------------------------------------
+Compounds        : 4H-1-Benzopyran-4-one, 3-(α-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy- | 4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-5,7-dihydroxy-3-(D-xylopyranosyloxy)- | 4H-1-Benzopyran-4-one, 3-(β-L-arabinopyranosyloxy)-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy- | 4H-1-Benzopyran-4-one, 3-(ara
+MCS (SMARTS)     : [#6]1(-&@[#6](-&!@[#8&!R])-&@[#6](-&!@[#8&!R])-&@[#6](-&@[#6]-&@[#8]-&@1)-&!@[#8&!R])-&!@[#8&!R]-&!@[#6]1:&@[#6](:&@[#8]:&@[#6]2:&@[#6](:&@[#6]:&@1=&!@[#8&!R]):&@[#6](:&@[#6]:&@[#6](:&@[#6]:&@2)-&!@[#8&!R])-&!@[#8&!R])-&!@[#6]1:&@[#6]:&@[#6](:&@[#6](:&@[#6]:&@[#6]:&@1)-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : aromatic_benzene(6); phenol(6); catechol(6); hydroxyl(6); ether(6); pyranose_sugar(6)
+Shared scaffolds : O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12 (x3); O=c1c(OC2CCCCO2)c(-c2ccccc2)oc2ccccc12 (x2)
+
+Community 18465 | n=5 | mean consensus=0.103
+---------------------------------------------------------------------------
+Compounds        : 2(5H)-Furanone, 5-(2,4,6-octatriyn-1-yl)-, (5R)- | 2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4S,5R)- | 2(3H)-Furanone, dihydro-4-hydroxy-5-(2,4,6-octatriyn-1-yl)-, (4R,5S)-rel- | 2(3H)-Furanone, 5-(1,8-dihydroxy-2,4,6-octatriyn-1-yl)dihydro-, (5S)- | 2(3H)-Furanone, dihydro-5-(8-
+MCS (SMARTS)     : [#6&!R](-&!@[#6&!R]#&!@[#6&!R]-&!@[#6&!R]#&!@[#6&!R]-&!@[#6&!R]#&!@[#6&!R]-&!@[#6&!R])-&!@[#6&R]
+Recurring groups : ester(5); ether(5); alkyne(5); lactone(5); hydroxyl(4)
+Shared scaffolds : O=C1CCCO1 (x4)
+
+Community 41231 | n=5 | mean consensus=0.025
+---------------------------------------------------------------------------
+Compounds        : D-Mannose | D-Galactose | D-Glucose | D-Galacturonic acid | D-Glucuronic acid
+MCS (SMARTS)     : [#6&!R](-&!@[#6]1-&@[#6](-&@[#6](-&@[#6](-&@[#6](-&@[#8]-&@1)-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : hydroxyl(5); ether(5); pyranose_sugar(5); carboxylic_acid(2)
+Shared scaffolds : C1CCOCC1 (x5)
+
+Community 19661 | n=4 | mean consensus=0.019
+---------------------------------------------------------------------------
+Compounds        : γ-Terpinene | 1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8R)- | 1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5E,8S)- | 1,5-Cyclodecadiene, 1,5-dimethyl-8-(1-methylethenyl)-, (1E,5Z,8S)-
+MCS (SMARTS)     : [#6&R]-&!@[#6&!R]-&!@[#6&!R]
+Recurring groups : alkene(4)
+Shared scaffolds : (none)
+
+Community 41263 | n=4 | mean consensus=0.131
+---------------------------------------------------------------------------
+Compounds        : Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate | Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2R,4R)-rel- | Bicyclo[2.2.1]heptan-2-ol, 1,7,7-trimethyl-, 2-acetate, (1R,2S,4R)-rel- | Bicyclo[3.1.0]hexan-3-ol, 4-methylene-1-(1-methylethyl)-, 3-acetate, (1S,3S,5S)-
+MCS (SMARTS)     : [#6&!R](-&!@[#6&!R])(=&!@[#8&!R])-&!@[#8&!R]-&!@[#6]1-&@[#6]-&@[#6](-&@[#6]-&@[#6]-&@1)-&!@[#6&!R]
+Recurring groups : ester(4); ether(4); lactone(4)
+Shared scaffolds : C1CC2CCC1C2 (x3)
+
+Community 41207 | n=4 | mean consensus=0.121
+---------------------------------------------------------------------------
+Compounds        : Stigmast-5-en-3-ol, (3β,24S)- | Stigmast-5-en-3-ol, (3β)- | Stigmast-5-en-3-ol, (3β,24ξ)- | Stigmast-5-en-3-ol
+MCS (SMARTS)     : [#6&!R]-&!@[#6&!R]-&!@[#6&!R](-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R](-&!@[#6&!R])-&!@[#6]1-&@[#6]-&@[#6]-&@[#6]2-&@[#6]-&@1(-&@[#6]-&@[#6]-&@[#6]1-&@[#6]-&@2-&@[#6]-&@[#6]=&@[#6]2-&@[#6]-&@1(-&@[#6]-&@[#6]-&@[#6](-&@[#6]-&@2)-&!@[#8&!R])-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : hydroxyl(4); alkene(4)
+Shared scaffolds : C1=C2CCCCC2[C@H]2CCC3CCC[C@H]3[C@@H]2C1 (x4)
+
+Community 4022 | n=4 | mean consensus=0.616
+---------------------------------------------------------------------------
+Compounds        : 9,12-Octadecadienoic acid, (9E,12E)- | 9,12-Octadecadienoic acid (9Z,12Z)- | 9,12-Octadecadienoic acid | myristic acid
+MCS (SMARTS)     : [#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R]-&!@[#6&!R](=&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : carboxylic_acid(4); alkene(3)
+Shared scaffolds : (none) (x4)
+
+Community 36713 | n=4 | mean consensus=0.384
+---------------------------------------------------------------------------
+Compounds        : L-Cysteine, L-tyrosylglycyl-L-leucyl-L-seryl-L-lysylglycyl-L-cysteinyl-L-phenylalanylglycyl-L-leucyl-L-lysyl-L-leucyl-L-α-aspartyl-L-arginyl-L-isoleucylglycyl-L-seryl-L-methionyl-L-serylglycyl-L-leucylglycyl-, cyclic (7→23)-disulfide | 4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-3-(β-D-glucopyran
+MCS (SMARTS)     : [#8&!R]-&!@[#6]1:&@[#6]:&@[#6](:&@[#6]:&@[#6]:&@[#6]:&@1-&!@[#8&!R])-&!@[#6]1:&@[#8]:&@[#6]2:&@[#6](:&@[#6](:&@[#6]:&@1-&!@[#8&!R]-&!@[#6]1-&@[#6](-&!@[#8&!R])-&@[#6](-&!@[#8&!R])-&@[#6](-&@[#6](-&@[#8]-&@1)-&!@[#6&!R]-&!@[#8&!R])-&!@[#8&!R])=&!@[#8&!R]):&@[#6](:&@[#6]:&@[#6](:&@[#6]:&@2)-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : aromatic_benzene(3); phenol(3); catechol(3); hydroxyl(3); ether(3); pyranose_sugar(3)
+Shared scaffolds : O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12 (x3)
+
+Community 31868 | n=3 | mean consensus=0.228
+---------------------------------------------------------------------------
+Compounds        : 1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, octahydro-7-methyl-3-methylene-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)- | 1H-Cycloprop[e]azulene, decahydro-1,1,4-trimethyl-7-methylene-, (1aR,4R,4aR,7aR,7bR)- | Cyclobuta[1,2:3,4]dicyclopentene, decahydro-3a-methyl-6-methylene-1-(1-methylethyl)-, (1S,3aS,3b
+MCS (SMARTS)     : [#6&!R]-&!@[#6&R]1-&@[#6&R]-&@[#6&R]-&@[#6&R]-&@[#6&R]-&@[#6]2-&@[#6]-&@1-&@[#6]-&@[#6]-&@[#6]-&@2=&!@[#6&!R]
+Recurring groups : alkene(3)
+Shared scaffolds : (none)
+
+Community 33028 | n=3 | mean consensus=0.086
+---------------------------------------------------------------------------
+Compounds        : 1H-Cyclopenta[1,3]cyclopropa[1,2]benzene, 3a,3b,4,5,6,7-hexahydro-3,7-dimethyl-4-(1-methylethyl)-, (3aS,3bR,4S,7R,7aR)- | Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1R,2S,6S,7S,8S)- | Tricyclo[4.4.0.02,7]dec-3-ene, 1,3-dimethyl-8-(1-methylethyl)-, (1S,2R,6R,7R,8S)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6&R]1=&@[#6&R]-&@[#6&R]-&@[#6]2-&@[#6](-&@[#6&R]-&@1)-&@[#6](-&@[#6]-&@[#6]-&@[#6]-&@2-&!@[#6&!R])-&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : alkene(3)
+Shared scaffolds : C1=CC2C3CCCC2C3C1 (x2)
+
+Community 41171 | n=3 | mean consensus=0.478
+---------------------------------------------------------------------------
+Compounds        : Urs-12-en-28-oic acid, 3-hydroxy-, (3β,19α,20β)- | Urs-12-en-28-oic acid, 3-hydroxy-, (3β)- | Urs-12-en-28-oic acid, 3-hydroxy-, (3α)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1-&@[#6]-&@[#6]-&@[#6]2(-&@[#6](-&@[#6]-&@1-&!@[#6&!R])-&@[#6]1-&@[#6](-&@[#6]-&@[#6]-&@2)(-&!@[#6&!R])-&@[#6]2(-&@[#6](-&@[#6]-&@[#6]=&@1)-&@[#6]1(-&@[#6](-&@[#6]-&@[#6]-&@2)-&@[#6](-&@[#6](-&@[#6]-&@[#6]-&@1)-&!@[#8&!R])(-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R](=&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : carboxylic_acid(3); hydroxyl(3); alkene(3)
+Shared scaffolds : C1=C2C3CCCCC3CCC2C2CCC3CCCCC3C2C1 (x3)
+
+Community 36242 | n=3 | mean consensus=0.330
+---------------------------------------------------------------------------
+Compounds        : 4H-1-Benzopyran-4-one, 3-[(6-deoxy-β-D-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy- | 4H-1-Benzopyran-4-one, 3-[(6-deoxy-α-L-mannopyranosyl)oxy]-2-(3,4-dihydroxyphenyl)-5,7-dihydroxy- | 4H-1-Benzopyran-4-one, 2-(3,4-dihydroxyphenyl)-6-β-D-glucopyranosyl-5,7-dihydroxy-
+MCS (SMARTS)     : [#6]1:&@[#6](:&@[#8]:&@[#6]2:&@[#6](:&@[#6]:&@1=&!@[#8&!R]):&@[#6](:&@[#6]:&@[#6](:&@[#6]:&@2)-&!@[#8&!R])-&!@[#8&!R])-&!@[#6]1:&@[#6]:&@[#6](:&@[#6](:&@[#6]:&@[#6]:&@1)-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : aromatic_benzene(3); phenol(3); catechol(3); hydroxyl(3); ether(3); pyranose_sugar(2)
+Shared scaffolds : O=c1c(O[C@H]2CCCCO2)c(-c2ccccc2)oc2ccccc12 (x2)
+
+Community 41149 | n=3 | mean consensus=0.126
+---------------------------------------------------------------------------
+Compounds        : tricyclene | 1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-rel- | 1H-Cycloprop[e]azulene, 1a,2,3,4,4a,5,6,7b-octahydro-1,1,4,7-tetramethyl-, (1aR,4R,4aR,7bS)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6&R]-&@[#6&R](-&@[#6&R]-&@[#6]1-&@[#6](-&@[#6]-&@1)-&!@[#6&!R])-&@[#6&R]
+Recurring groups : alkene(2)
+Shared scaffolds : (none)
+
+Community 41249 | n=2 | mean consensus=0.370
+---------------------------------------------------------------------------
+Compounds        : 2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2E)- | 2-Propenoic acid, 3-[2,2-dimethyl-8-(3-methyl-2-buten-1-yl)-2H-1-benzopyran-6-yl]-, (2Z)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1(-&@[#8]-&@[#6]2:&@[#6](-&@[#6]=&@[#6]-&@1):&@[#6]:&@[#6](:&@[#6]:&@[#6]:&@2-&!@[#6&!R]-&!@[#6&!R]=&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R]=&!@[#6&!R]-&!@[#6&!R](=&!@[#8&!R])-&!@[#8&!R])-&!@[#6&!R]
+Recurring groups : aromatic_benzene(2); phenol(2); carboxylic_acid(2); ether(2); alkene(2)
+Shared scaffolds : C1=Cc2ccccc2OC1 (x2)
+
+Community 41134 | n=2 | mean consensus=0.419
+---------------------------------------------------------------------------
+Compounds        : Quercetin | 3-O-methylquercetin
+MCS (SMARTS)     : [#6]1:&@[#6]:&@[#6](:&@[#6](:&@[#6]:&@[#6]:&@1-&!@[#6]1:&@[#6](:&@[#6](=&!@[#8&!R]):&@[#6]2:&@[#6](:&@[#8]:&@1):&@[#6]:&@[#6](:&@[#6]:&@[#6]:&@2-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : aromatic_benzene(2); phenol(2); catechol(2)
+Shared scaffolds : O=c1cc(-c2ccccc2)oc2ccccc12 (x2)
+
+Community 41271 | n=2 | mean consensus=0.008
+---------------------------------------------------------------------------
+Compounds        : 12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-, (1R,3E,7E,11R)- | 12-Oxabicyclo[9.1.0]dodeca-3,7-diene, 1,5,5,8-tetramethyl-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1=&@[#6]-&@[#6]-&@[#6](-&@[#6]=&@[#6]-&@[#6]-&@[#6]2(-&@[#6](-&@[#6]-&@[#6]-&@1)-&@[#8]-&@2)-&!@[#6&!R])(-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : ether(2); alkene(2); epoxide(2)
+Shared scaffolds : (none)
+
+Community 507 | n=2 | mean consensus=0.276
+---------------------------------------------------------------------------
+Compounds        : Olean-12-en-3-ol, (3β)- | nerolidol
+MCS (SMARTS)     : [#6&!R]
+Recurring groups : hydroxyl(2); alkene(2)
+Shared scaffolds : (none)
+
+Community 41129 | n=2 | mean consensus=0.039
+---------------------------------------------------------------------------
+Compounds        : α-L-Mannopyranose, 6-deoxy- | α-D-Galactopyranose, 6-deoxy-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1-&@[#6](-&@[#6](-&@[#6](-&@[#6](-&@[#8]-&@1)-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : hydroxyl(2); ether(2); pyranose_sugar(2)
+Shared scaffolds : C1CCOCC1 (x2)
+
+Community 38940 | n=2 | mean consensus=0.520
+---------------------------------------------------------------------------
+Compounds        : L-Galactose, 6-deoxy- | L-Mannose, 6-deoxy-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1-&@[#6](-&@[#6](-&@[#6](-&@[#6](-&@[#8]-&@1)-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R])-&!@[#8&!R]
+Recurring groups : hydroxyl(2); ether(2); pyranose_sugar(2)
+Shared scaffolds : C1CCOCC1 (x2)
+
+Community 33410 | n=2 | mean consensus=0.072
+---------------------------------------------------------------------------
+Compounds        : 1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aR,4aR,7S,7aR,7bR)- | 1H-Cycloprop[e]azulen-7-ol, decahydro-1,1,7-trimethyl-4-methylene-, (1aS,4aS,7R,7aS,7bS)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1(-&@[#6]2-&@[#6]-&@1-&@[#6]-&@[#6]-&@[#6](-&@[#6]1-&@[#6]-&@2-&@[#6](-&@[#6]-&@[#6]-&@1)(-&!@[#8&!R])-&!@[#6&!R])=&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : hydroxyl(2); alkene(2)
+Shared scaffolds : C=C1CCC2CC2C2CCCC12 (x2)
+
+Community 32939 | n=2 | mean consensus=0.074
+---------------------------------------------------------------------------
+Compounds        : 4H-Benzo[de][1,6]naphthyridine, 8,9-dimethoxy-4-methyl- | Terpinen-4-ol
+MCS (SMARTS)     : [#6&R]-&!@[#8&!R]
+Recurring groups : alkene(2)
+Shared scaffolds : (none)
+
+Community 31128 | n=2 | mean consensus=0.524
+---------------------------------------------------------------------------
+Compounds        : Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1S,2S,4R)- | Cyclohexane, 1-ethenyl-1-methyl-2,4-bis(1-methylethenyl)-, (1R,2R,4S)-rel-
+MCS (SMARTS)     : [#6&!R]-&!@[#6&!R](=&!@[#6&!R])-&!@[#6]1-&@[#6]-&@[#6]-&@[#6](-&@[#6](-&@[#6]-&@1)-&!@[#6&!R](=&!@[#6&!R])-&!@[#6&!R])(-&!@[#6&!R])-&!@[#6&!R]=&!@[#6&!R]
+Recurring groups : alkene(2)
+Shared scaffolds : C1CCCCC1 (x2)
+
+Community 29867 | n=2 | mean consensus=0.051
+---------------------------------------------------------------------------
+Compounds        : Linalool | α-Pinene
+MCS (SMARTS)     : [#6&!R]
+Recurring groups : alkene(2)
+Shared scaffolds : (none)
+
+Community 27879 | n=2 | mean consensus=0.353
+---------------------------------------------------------------------------
+Compounds        : 2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]- | 2-Propenoic acid, 3-[4-hydroxy-3,5-bis(3-methyl-2-buten-1-yl)phenyl]-, (2E)-
+MCS (SMARTS)     : [#8&!R]-&!@[#6]1:&@[#6](:&@[#6]:&@[#6](:&@[#6]:&@[#6]:&@1-&!@[#6&!R]-&!@[#6&!R]=&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R]=&!@[#6&!R]-&!@[#6&!R](=&!@[#8&!R])-&!@[#8&!R])-&!@[#6&!R]-&!@[#6&!R]=&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : aromatic_benzene(2); phenol(2); carboxylic_acid(2); alkene(2)
+Shared scaffolds : c1ccccc1 (x2)
+
+Community 18203 | n=2 | mean consensus=0.524
+---------------------------------------------------------------------------
+Compounds        : 5-Azulenemethanol, 1,2,3,4,5,6,7,8-octahydro-α,α,3,8-tetramethyl-, (3S,5R,8S)- | Dodecanedioic acid
+MCS (SMARTS)     : [#6&!R](-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : (none)
+Shared scaffolds : (none)
+
+Community 17189 | n=2 | mean consensus=0.044
+---------------------------------------------------------------------------
+Compounds        : 2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-tetramethyl-, (2R,4aS)- | 2-Naphthalenemethanol, 1,2,3,4,4a,5,6,7-octahydro-α,α,4a,8-tetramethyl-, (2R,4aR)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6&!R](-&!@[#8&!R])(-&!@[#6]1-&@[#6]-&@[#6]2=&@[#6](-&@[#6]-&@[#6]-&@[#6]-&@[#6]-&@2(-&@[#6]-&@[#6]-&@1)-&!@[#6&!R])-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : hydroxyl(2); alkene(2)
+Shared scaffolds : C1=C2CCCCC2CCC1 (x2)
+
+Community 6846 | n=2 | mean consensus=0.236
+---------------------------------------------------------------------------
+Compounds        : lauric acid | 2(3H)-Furanone, dihydro-4-hydroxy-5-(8-hydroxy-2,4,6-octatriyn-1-yl)-, (4S,5S)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6&!R]-&!@[#8&!R]
+Recurring groups : (none)
+Shared scaffolds : (none)
+
+Community 35267 | n=2 | mean consensus=0.076
+---------------------------------------------------------------------------
+Compounds        : Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aS)- | Naphthalene, 1,2,3,5,6,8a-hexahydro-4,7-dimethyl-1-(1-methylethyl)-, (1S,8aR)-
+MCS (SMARTS)     : [#6&!R]-&!@[#6]1=&@[#6]-&@[#6]2-&@[#6](-&@[#6]-&@[#6]-&@[#6](=&@[#6]-&@2-&@[#6]-&@[#6]-&@1)-&!@[#6&!R])-&!@[#6&!R](-&!@[#6&!R])-&!@[#6&!R]
+Recurring groups : alkene(2)
+Shared scaffolds : C1=C[C@H]2CCCC=C2CC1 (x2)
+
